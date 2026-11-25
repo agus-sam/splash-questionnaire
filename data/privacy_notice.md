@@ -18,7 +18,7 @@
 
 **Privacy notice (template, to be checked and completed by the data protection officer before launch)**
 
-**Controller:** Europa-Universität Flensburg, SEDEV department, SPLASH project. Contact: Dr. Mominul Hasan, mominul.hasan@uni-flensburg.de. Address, imprint and data protection officer: [fill in before publication].
+**Controller:** Europa-Universität Flensburg, SEDEV department, SPLASH project. Contact: Agus Samsudin, agus.samsudin@uni-flensburg.de. Address, imprint and data protection officer: [fill in before publication].
 
 **Purpose:** Scientific study of how swimming pools can be heated flexibly and in a climate-friendly way. Evaluation is aggregated and anonymised. Minimum group sizes are respected.
 
