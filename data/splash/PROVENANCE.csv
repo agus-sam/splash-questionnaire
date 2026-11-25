@@ -1,0 +1,5 @@
+item,source,year,version,note
+weather,PVGIS TMY (T5 and T6 zone centres),TMY (months from different historical years),TO BE FILLED: PVGIS version and database (ERA5 or SARAH) and TMY period,Relabelled to the 2026 calendar. Not the same year as the curtailment series.
+curtailment,"TSO publication 'Ausgewiesene Abregelungsstrommenge', 15 min, MW, zones T5 and T6, hourly mean",2025 (full year) and 2026 (to 22 Nov),download 2026-11-23,Hourly mean of quarter-hours. 05.10.2026 is N.A. at the operator and set to 0. See scripts/build_curtailment.py. Signal definition (potential vs realised) still to be confirmed.
+campusbad_flensburg_geometry,Campusbad Lageplan 2017 (freshkonzept.de design),2017,,Basin environment (indoor/outdoor) from plan; areas read from plan pixels scaled on the 50 m pool (+-5-10 %); hall floor eyeballed (+-15 %). Plan not dimensioned: replace by operator data.
+campusbad_hall_floor,user statement,2026,,H110 hall floor ~5000 m2 as stated by user (plan-based estimate ~2850 m2 superseded)

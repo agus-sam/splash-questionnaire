@@ -1,0 +1,796 @@
+# SPLASH Questionnaire and Simulation: questionnaire definition
+#
+# One file drives the form, the storage columns and the documentation.
+# origin: draft  = taken from the project's questionnaire draft v1 (numbering kept)
+#         added  = added for the calculation or for the research design
+#
+# types: text, number, single, multi, scale, textarea, checkbox, basins, consumption, season, weekdays, hours
+# show_if: {id: <question id>, in: [<values>]} or {id: ..., truthy: true}
+# feeds:   what the answer is used for (calculation, research, contact)
+
+meta:
+  version: "1.5.1"
+  source: "Questionnaire_chosen_draft_v1 (SPLASH), extended"
+
+steps:
+  0: {key: welcome,  title_de: "Willkommen",         title_en: "Welcome"}
+  1: {key: pool,     title_de: "Ihr Bad",            title_en: "Your pool"}
+  2: {key: energy,   title_de: "Energie",            title_en: "Energy"}
+  3: {key: flex,     title_de: "Flexibilität",       title_en: "Flexibility"}
+  4: {key: results,  title_de: "Ihr Ergebnis",       title_en: "Your results"}
+  5: {key: refine,   title_de: "Genauer rechnen",    title_en: "Refine"}
+  6: {key: followup, title_de: "Austausch",          title_en: "Follow-up"}
+
+questions:
+  # ------------------------------------------------------------------ step 0
+  - id: q0_consent
+    step: 0
+    type: checkbox
+    origin: added
+    required: true
+    feeds: research
+    label_de: "Ich habe die Hinweise zum Datenschutz gelesen und nehme freiwillig teil."
+    label_en: "I have read the privacy notice and take part voluntarily."
+
+  # ------------------------------------------------------------------ step 1
+  - id: q1_name
+    step: 1
+    type: text
+    origin: draft
+    required: true
+    feeds: research
+    label_de: "1. Name des Bades"
+    label_en: "1. Name of the pool"
+  - id: q1_city
+    step: 1
+    type: text
+    origin: draft
+    required: true
+    feeds: research
+    label_de: "Ort / Region"
+    label_en: "City / region"
+  - id: q1_postcode
+    step: 1
+    type: text
+    origin: added
+    required: true
+    feeds: calculation
+    label_de: "Postleitzahl"
+    label_en: "Postal code"
+    help_de: "Ordnet Ihr Bad einer Netzregion und einem Wetterjahr zu."
+    help_en: "Assigns your pool to a grid region and a weather year."
+  - id: q1_role
+    step: 1
+    type: single
+    origin: draft
+    required: true
+    feeds: research
+    label_de: "Ihre Rolle"
+    label_en: "Your role"
+    options:
+      - {value: operator,  label_de: "Bäderbetrieb / Betriebsleitung", label_en: "Pool operator / manager"}
+      - {value: technical, label_de: "Technische Leitung / Facility Management", label_en: "Technical / facility manager"}
+      - {value: owner,     label_de: "Kommunale Eigentümerin / Vertretung", label_en: "Municipal owner / representative"}
+      - {value: energy,    label_de: "Energie- / Stadtwerke", label_en: "Energy / utility staff"}
+      - {value: other,     label_de: "Sonstige", label_en: "Other"}
+  - id: q1_role_other
+    step: 1
+    type: text
+    origin: draft
+    feeds: research
+    show_if: {id: q1_role, in: [other]}
+    label_de: "Sonstige Rolle"
+    label_en: "Other role"
+  - id: q1_pool_type
+    step: 1
+    type: single
+    origin: added
+    required: true
+    feeds: calculation
+    label_de: "Art des Bades"
+    label_en: "Type of pool"
+    options:
+      - {value: indoor,   label_de: "Hallenbad", label_en: "Indoor pool"}
+      - {value: combined, label_de: "Kombibad (Halle und Freibad)", label_en: "Combined pool (indoor and outdoor)"}
+      - {value: open_air, label_de: "Freibad", label_en: "Open-air pool"}
+    help_de: "Für Freibäder wird die flexible Beheizung berechnet, ein Wärmepumpen-Szenario gibt es nicht."
+    help_en: "For open-air pools the app calculates flexible heating; there is no heat pump scenario."
+  - id: q1_legal_form
+    step: 1
+    type: single
+    origin: added
+    required: true
+    feeds: calculation
+    label_de: "Betreiberform"
+    label_en: "Operator type"
+    help_de: "Bestimmt Umsatzsteuerwirkung und das passende Förderprogramm."
+    help_en: "Determines the effect of VAT and the matching grant programme."
+    options:
+      - {value: municipal_operation, label_de: "Kommunaler Eigenbetrieb / Amt", label_en: "Municipal operation / department"}
+      - {value: municipal_company,   label_de: "Kommunale Gesellschaft (z. B. Bäder GmbH, Stadtwerke)", label_en: "Municipal company (e.g. pool company, utility)"}
+      - {value: association,         label_de: "Verein / Genossenschaft", label_en: "Association / cooperative"}
+      - {value: private,             label_de: "Privates Unternehmen", label_en: "Private company"}
+      - {value: other,               label_de: "Sonstige", label_en: "Other"}
+  - id: q2_year_built
+    step: 1
+    type: number
+    origin: draft
+    feeds: research
+    min: 1850
+    max: 2030
+    step_size: 1
+    label_de: "2. Baujahr"
+    label_en: "2. Year built"
+  - id: q2_year_renov
+    step: 1
+    type: number
+    origin: draft
+    feeds: research
+    min: 1850
+    max: 2030
+    step_size: 1
+    label_de: "Jahr der letzten Generalsanierung (leer lassen, falls keine)"
+    label_en: "Year of last major renovation (leave empty if none)"
+  - id: q3_basins
+    step: 1
+    type: basins
+    origin: draft
+    required: true
+    feeds: calculation
+    label_de: "3. Welche Becken hat Ihr Bad?"
+    label_en: "3. Which basins does your pool have?"
+    help_de: "Länge, Breite und Tiefen genügen. Das Volumen berechnen wir, wenn Sie es nicht kennen."
+    help_en: "Length, width and depths are enough. We compute the volume if you do not know it."
+    max_rows: 7
+  - id: q3_hall_area
+    step: 1
+    type: number
+    origin: added
+    feeds: calculation
+    min: 0
+    unit: "m²"
+    label_de: "Hallenfläche (Grundfläche der Schwimmhalle, m²)"
+    label_en: "Hall floor area (m²)"
+    help_de: "Optional. Ohne Angabe schätzen wir sie aus der Wasserfläche."
+    help_en: "Optional. Without it we estimate it from the water surface."
+  - id: q3_auto_temp
+    step: 1
+    type: single
+    origin: draft
+    feeds: research
+    label_de: "Wird die Temperatur automatisch geregelt?"
+    label_en: "Is temperature regulated automatically?"
+    options:
+      - {value: "yes",  label_de: "Ja", label_en: "Yes"}
+      - {value: partly, label_de: "Teilweise", label_en: "Partly"}
+      - {value: "no",   label_de: "Nein", label_en: "No"}
+  - id: q4_season
+    step: 1
+    type: season
+    origin: added
+    feeds: calculation
+    label_de: "Wann ist das Bad geöffnet? (Saison)"
+    label_en: "When is the pool open? (season)"
+    help_de: "Ganzjährig oder von Datum bis Datum, zum Beispiel 1. Mai bis 30. September. Das Modell rechnet in ganzen Monaten."
+    help_en: "All year, or from date to date, for example 1 May to 30 September. The model works in whole months."
+  - id: q4_season_outdoor
+    step: 1
+    type: season
+    origin: added
+    feeds: calculation
+    show_if: {id: q1_pool_type, in: [combined]}
+    label_de: "Wann sind die Außenbecken geöffnet?"
+    label_en: "When are the outdoor basins open?"
+    help_de: "Nur für Kombibäder. Die Halle läuft ganzjährig. Ohne Angabe rechnet das Modell mit Mai bis September, wie im SPLASH-Modell."
+    help_en: "Combined pools only. The hall runs all year. Without an answer the model uses May to September, as in the SPLASH model."
+  - id: q4_days
+    step: 1
+    type: weekdays
+    origin: added
+    feeds: research
+    label_de: "An welchen Tagen ist das Bad geöffnet?"
+    label_en: "On which days is the pool open?"
+  - id: q4_hours
+    step: 1
+    type: hours
+    origin: added
+    feeds: research
+    label_de: "Öffnungszeiten"
+    label_en: "Opening hours"
+    help_de: "Von bis Uhr. Am Wochenende leer lassen, wenn geschlossen."
+    help_en: "From and to. Leave the weekend empty if closed."
+  - id: q4_visitors_weekday
+    step: 1
+    type: number
+    origin: draft
+    feeds: calculation
+    min: 0
+    label_de: "4. Typische Besucherzahl werktags (Personen pro Tag)"
+    label_en: "4. Typical visitors on weekdays (people per day)"
+    help_de: "Wer schwimmt oder duscht. Aus den Besucherzahlen, den Öffnungstagen und den Betriebswochen rechnet das Modell das Warmwasser für Duschen."
+    help_en: "People who swim or shower. The model calculates the hot water for showers from the visitor numbers, the open days and the operating weeks."
+  - id: q4_visitors_weekend
+    step: 1
+    type: number
+    origin: draft
+    feeds: calculation
+    min: 0
+    label_de: "Typische Besucherzahl am Wochenende (Personen pro Tag)"
+    label_en: "Typical visitors on weekends (people per day)"
+  - id: q4_visitors_year
+    step: 1
+    type: number
+    origin: added
+    feeds: calculation
+    min: 0
+    label_de: "Besucher pro Jahr (wenn bekannt)"
+    label_en: "Visitors per year (if known)"
+    help_de: "Optional. Eine Jahreszahl aus Ihrer Statistik ersetzt die Rechnung aus den Tageswerten. Sie sollte alle Gäste enthalten, die duschen."
+    help_en: "Optional. An annual figure from your statistics replaces the calculation from the daily values. It should include all guests who shower."
+  - id: q4_dhw_supply
+    step: 1
+    type: single
+    origin: added
+    feeds: calculation
+    label_de: "Wie wird das Duschwasser erwärmt?"
+    label_en: "How is the shower water heated?"
+    help_de: "Nur wenn die Heizanlage des Bades das Duschwasser mit erwärmt, rechnet das Modell das Warmwasser in Bedarf, Auslegung und Heizstabgröße ein."
+    help_en: "Only if the heating plant of the pool also heats the shower water does the model include hot water in demand, design load and heater size."
+    options:
+      - {value: central,  label_de: "Zentral, mit derselben Anlage wie das Bad", label_en: "Centrally, by the same plant as the pool"}
+      - {value: separate, label_de: "Getrennt (eigene Warmwasserbereiter)", label_en: "Separately (own water heaters)"}
+      - {value: none,     label_de: "Keine Duschen oder kein Warmwasser", label_en: "No showers or no hot water"}
+  - id: q4_dhw_tank
+    step: 1
+    type: single
+    origin: added
+    feeds: calculation
+    show_if: {id: q4_dhw_supply, in: [central]}
+    label_de: "Gibt es einen Warmwasserspeicher für die Duschen?"
+    label_en: "Is there a hot water tank for the showers?"
+    help_de: "Ein Speicher glättet die Duschspitze. Das Modell nutzt ihn bei der Auslegung der Anlage. Bei Fernwärme ohne Speicher bitte Nein wählen."
+    help_en: "A tank smooths the shower peak. The model uses it when it sizes the plant. With district heating and no tank, choose No."
+    options:
+      - {value: "yes", label_de: "Ja", label_en: "Yes"}
+      - {value: "no",  label_de: "Nein", label_en: "No"}
+  - id: q4_dhw_tank_size
+    step: 1
+    type: number
+    origin: added
+    feeds: calculation
+    show_if: {id: q4_dhw_tank, in: ["yes"]}
+    min: 0
+    label_de: "Größe des Warmwasserspeichers"
+    label_en: "Size of the hot water tank"
+    help_de: "Nutzvolumen. Die Einheit wählen Sie in der nächsten Frage."
+    help_en: "Usable volume. You choose the unit in the next question."
+  - id: q4_dhw_tank_unit
+    step: 1
+    type: single
+    origin: added
+    feeds: calculation
+    show_if: {id: q4_dhw_tank, in: ["yes"]}
+    label_de: "Einheit der Speichergröße"
+    label_en: "Unit of the tank size"
+    options:
+      - {value: l,  label_de: "Liter", label_en: "Litres"}
+      - {value: m3, label_de: "Kubikmeter (m³)", label_en: "Cubic metres (m³)"}
+  - id: q4_peaks
+    step: 1
+    type: textarea
+    origin: draft
+    feeds: research
+    label_de: "Stärkste Zeiten (z. B. Werktagabende, Schulschwimmen vormittags)"
+    label_en: "Busiest periods and hours (e.g. weekday evenings, school swimming mornings)"
+  - id: q5_temp_change
+    step: 1
+    type: single
+    origin: draft
+    feeds: research
+    label_de: "5. Haben Sie die Beckentemperaturen schon einmal angehoben oder abgesenkt (z. B. in der Energiekrise)?"
+    label_en: "5. Have you ever raised or lowered pool temperatures (e.g. during the energy crisis)?"
+    options:
+      - {value: lowered, label_de: "Abgesenkt", label_en: "Lowered"}
+      - {value: raised,  label_de: "Angehoben", label_en: "Raised"}
+      - {value: both,    label_de: "Beides", label_en: "Both"}
+      - {value: never,   label_de: "Nie", label_en: "Never"}
+  - id: q5_effects
+    step: 1
+    type: textarea
+    origin: draft
+    feeds: research
+    show_if: {id: q5_temp_change, in: [lowered, raised, both]}
+    label_de: "Welche Wirkungen gab es (Energieeinsparung, Beschwerden, Hygiene, Technik)?"
+    label_en: "What were the effects (energy savings, visitor complaints, hygiene, technical issues)?"
+  - id: q6_air_setpoint
+    step: 1
+    type: number
+    origin: draft
+    feeds: calculation
+    min: 20
+    max: 40
+    unit: "°C"
+    label_de: "6. Solltemperatur der Hallenluft (°C)"
+    label_en: "6. Hall air temperature setpoint (°C)"
+  - id: q6_humidity
+    step: 1
+    type: single
+    origin: draft
+    feeds: research
+    label_de: "Feuchteregelung"
+    label_en: "Humidity control"
+    options:
+      - {value: auto,   label_de: "Ja, automatisch", label_en: "Yes, automatic"}
+      - {value: manual, label_de: "Manuell", label_en: "Manual"}
+      - {value: "no",   label_de: "Nein", label_en: "No"}
+  - id: q6_ventilation
+    step: 1
+    type: single
+    origin: draft
+    feeds: calculation
+    label_de: "Lüftung"
+    label_en: "Ventilation"
+    help_de: "Das Modell rechnet für alle Antworten mit der Wärmerückgewinnung des SPLASH-Hallentyps (0,5 beim Kombibad)."
+    help_en: "For every answer the model uses the heat recovery of the SPLASH hall type (0.5 for the combined pool)."
+    options:
+      - {value: mech_hr,    label_de: "Mechanisch mit Wärmerückgewinnung", label_en: "Mechanical with heat recovery"}
+      - {value: mech_no_hr, label_de: "Mechanisch ohne Wärmerückgewinnung", label_en: "Mechanical without heat recovery"}
+      - {value: natural,    label_de: "Natürlich", label_en: "Natural"}
+      - {value: unknown,    label_de: "Weiß ich nicht", label_en: "Don't know"}
+
+  # ------------------------------------------------------------------ step 2
+  - id: q7_sources
+    step: 2
+    type: multi
+    origin: draft
+    required: true
+    feeds: calculation
+    label_de: "7. Welche Wärmequellen nutzen Sie?"
+    label_en: "7. Which heat sources do you use?"
+    options:
+      - {value: district_heat,  label_de: "Fernwärme", label_en: "District heating"}
+      - {value: gas,            label_de: "Erdgas", label_en: "Natural gas"}
+      - {value: oil,            label_de: "Heizöl", label_en: "Oil"}
+      - {value: chp,            label_de: "Blockheizkraftwerk (BHKW)", label_en: "CHP"}
+      - {value: heat_pump,      label_de: "Wärmepumpe", label_en: "Heat pump"}
+      - {value: biomass,        label_de: "Biomasse", label_en: "Biomass"}
+      - {value: solar_thermal,  label_de: "Solarthermie", label_en: "Solar thermal"}
+      - {value: electric,       label_de: "Elektrische Heizung", label_en: "Electric heating"}
+      - {value: other,          label_de: "Sonstige", label_en: "Other"}
+  - id: q7_main_source
+    step: 2
+    type: single
+    origin: draft
+    required: true
+    feeds: calculation
+    label_de: "Hauptwärmequelle"
+    label_en: "Main source"
+    options:
+      - {value: gas,           label_de: "Erdgas", label_en: "Natural gas"}
+      - {value: oil,           label_de: "Heizöl", label_en: "Oil"}
+      - {value: district_heat, label_de: "Fernwärme", label_en: "District heating"}
+      - {value: chp,           label_de: "Blockheizkraftwerk (BHKW)", label_en: "CHP"}
+      - {value: biomass,       label_de: "Biomasse", label_en: "Biomass"}
+      - {value: heat_pump,     label_de: "Wärmepumpe", label_en: "Heat pump"}
+      - {value: other,         label_de: "Sonstige", label_en: "Other"}
+  - id: q7_main_capacity_kw
+    step: 2
+    type: number
+    origin: draft
+    feeds: research
+    min: 0
+    unit: "kW"
+    label_de: "Ungefähre Leistung der Hauptwärmequelle (kW)"
+    label_en: "Approximate capacity of the main source (kW)"
+  - id: q8_consumption
+    step: 2
+    type: consumption
+    origin: draft
+    feeds: calculation
+    label_de: "8. Jahresverbrauch (letzte 1 bis 3 Jahre)"
+    label_en: "8. Annual energy consumption (last 1 to 3 years)"
+    help_de: "Ein typisches Jahr genügt. Nicht Zutreffendes leer lassen."
+    help_en: "One typical year is enough. Leave what does not apply empty."
+  - id: q8_later
+    step: 2
+    type: checkbox
+    origin: draft
+    feeds: research
+    label_de: "Ich prüfe die Zahlen später und reiche sie nach."
+    label_en: "I will check and send this later."
+    help_de: "Dann rechnen wir mit dem Median vergleichbarer Bäder (UBA) und markieren das deutlich."
+    help_en: "We then use the median of comparable pools (UBA) and mark this clearly."
+  - id: q8_quality
+    step: 2
+    type: single
+    show_if: {id: q8_consumption, truthy: true}
+    origin: added
+    feeds: calculation
+    options:
+      - {value: measured, label_de: "Gemessen / abgerechnet (Zähler, Rechnungen)", label_en: "Measured / billed (meters, invoices)"}
+      - {value: estimated, label_de: "Geschätzt", label_en: "Estimated"}
+    label_de: "Wie belastbar sind diese Verbrauchswerte?"
+    label_en: "How reliable are these consumption figures?"
+    help_de: "Wird in den Ergebnissen als Herkunft ausgewiesen. Ihre Werte werden nie überschrieben."
+    help_en: "Shown as provenance in the results. Your values are never overwritten."
+  - id: q8_heat_cost_eur
+    step: 2
+    type: number
+    origin: added
+    feeds: calculation
+    min: 0
+    unit: "EUR/a"
+    label_de: "Jährliche Wärmekosten (EUR, optional)"
+    label_en: "Annual heat cost (EUR, optional)"
+    help_de: "Damit rechnen wir mit Ihrem tatsächlichen Preis statt eines Standardpreises."
+    help_en: "This lets us use your actual price instead of a default."
+  - id: q8_elec_cost_eur
+    step: 2
+    type: number
+    origin: added
+    feeds: calculation
+    min: 0
+    unit: "EUR/a"
+    label_de: "Jährliche Stromkosten (EUR, optional)"
+    label_en: "Annual electricity cost (EUR, optional)"
+  - id: q8_costs_incl_vat
+    step: 2
+    type: single
+    origin: added
+    feeds: calculation
+    show_if: {id: q8_heat_cost_eur, truthy: true}
+    label_de: "Sind die Kosten brutto oder netto?"
+    label_en: "Are the costs gross or net?"
+    options:
+      - {value: "yes",     label_de: "Brutto (inkl. Umsatzsteuer)", label_en: "Gross (incl. VAT)"}
+      - {value: "no",      label_de: "Netto (ohne Umsatzsteuer)", label_en: "Net (excl. VAT)"}
+      - {value: unknown,   label_de: "Weiß ich nicht", label_en: "Don't know"}
+
+  # ------------------------------------------------------------------ step 3
+  - id: q9_programme
+    step: 3
+    type: single
+    origin: draft
+    feeds: research
+    label_de: "9. Sind Sie bereits in einem Flexibilitätsprogramm?"
+    label_en: "9. Are you already in a flexibility programme?"
+    options:
+      - {value: "yes",     label_de: "Ja", label_en: "Yes"}
+      - {value: partly,    label_de: "Teilweise", label_en: "Partly"}
+      - {value: "no",      label_de: "Nein", label_en: "No"}
+      - {value: unknown,   label_de: "Weiß ich nicht", label_en: "Don't know"}
+  - id: q9b_equipment
+    step: 3
+    type: multi
+    origin: draft
+    feeds: research
+    label_de: "9b. Haben oder planen Sie eines der Folgenden?"
+    label_en: "9b. Do you have, or plan, any of the following?"
+    options:
+      - {value: buffer,        label_de: "Wärmespeicher (Pufferspeicher)", label_en: "Thermal storage (buffer tank)"}
+      - {value: pv,            label_de: "PV-Anlage vor Ort", label_en: "On-site PV"}
+      - {value: solar_thermal, label_de: "Solarthermie", label_en: "Solar thermal"}
+      - {value: battery,       label_de: "Batteriespeicher", label_en: "Battery"}
+      - {value: none,          label_de: "Keines", label_en: "None"}
+      - {value: other,         label_de: "Sonstiges", label_en: "Other"}
+  - id: q9b_status
+    step: 3
+    type: single
+    origin: draft
+    feeds: research
+    show_if: {id: q9b_equipment, in: [buffer, pv, solar_thermal, battery, other]}
+    label_de: "Stand"
+    label_en: "Status"
+    options:
+      - {value: installed, label_de: "Vorhanden", label_en: "Installed"}
+      - {value: planned,   label_de: "Geplant", label_en: "Planned"}
+      - {value: neither,   label_de: "Weder noch", label_en: "Neither"}
+  - id: q9b_buffer_m3
+    step: 3
+    type: number
+    origin: added
+    feeds: research
+    min: 0
+    unit: "m³"
+    show_if: {id: q9b_equipment, in: [buffer]}
+    label_de: "Volumen des Pufferspeichers (m³, optional)"
+    label_en: "Buffer tank volume (m³, optional)"
+  - id: q9b_pv_kwp
+    step: 3
+    type: number
+    origin: added
+    feeds: research
+    min: 0
+    unit: "kWp"
+    show_if: {id: q9b_equipment, in: [pv]}
+    label_de: "PV-Leistung (kWp, optional)"
+    label_en: "PV capacity (kWp, optional)"
+  - id: q10_willing
+    step: 3
+    type: scale
+    origin: draft
+    required: true
+    feeds: research
+    label_de: "10. Wie bereit wären Sie, Ihr Bad flexibler mit Strom zu beheizen, wenn Strom günstig oder erneuerbarer Strom reichlich vorhanden ist?"
+    label_en: "10. How willing would you be to heat your pool more flexibly with electricity when prices are low or renewable electricity is abundant?"
+    scale:
+      - {value: 1, label_de: "Gar nicht", label_en: "Not at all"}
+      - {value: 2, label_de: "Eher nicht", label_en: "Unlikely"}
+      - {value: 3, label_de: "Unentschieden", label_en: "Undecided"}
+      - {value: 4, label_de: "Wahrscheinlich", label_en: "Likely"}
+      - {value: 5, label_de: "Sehr bereit", label_en: "Very willing"}
+  - id: q11_change
+    step: 3
+    type: single
+    origin: draft
+    required: true
+    feeds: calculation
+    label_de: "11. Um wie viel dürfte die Beckenwassertemperatur über den Sollwert steigen?"
+    label_en: "11. By how much could the pool water temperature rise above the setpoint?"
+    help_de: "Das Becken wird bei Überschussstrom bis zu diesem Wert über den Sollwert erwärmt und dient so als Wärmespeicher. Nach unten wird nicht abgesenkt. Hygiene- und Komfortgrenzen bleiben unverändert. Bei 'Keine' rechnen wir nur mit einem minimalen Spielraum von 0,25 K."
+    help_en: "At surplus power the pool is heated up to this value above the setpoint and acts as a heat store. It is not lowered below the setpoint. Hygiene and comfort limits stay unchanged. For 'None' we only use a minimal margin of 0.25 K."
+    options:
+      - {value: "0", label_de: "Keine", label_en: "None"}
+      - {value: "1", label_de: "Bis +1 °C", label_en: "Up to +1 °C"}
+      - {value: "2", label_de: "Bis +2 °C", label_en: "Up to +2 °C"}
+      - {value: "4", label_de: "Bis +4 °C", label_en: "Up to +4 °C"}
+  - id: q11_hold
+    step: 3
+    type: single
+    origin: draft
+    feeds: research
+    show_if: {id: q11_change, in: ["1", "2", "4"]}
+    label_de: "Wie lange jeweils am Stück?"
+    label_en: "For how long at a time?"
+    options:
+      - {value: "4",       label_de: "Bis 4 Stunden", label_en: "Up to 4 h"}
+      - {value: "8",       label_de: "4 bis 8 Stunden", label_en: "4 to 8 h"}
+      - {value: "12",      label_de: "Mehr als 8 Stunden", label_en: "More than 8 h"}
+      - {value: unknown,   label_de: "Nicht sicher", label_en: "Not sure"}
+  - id: q12_needs
+    step: 3
+    type: multi
+    origin: draft
+    feeds: research
+    label_de: "12. Was bräuchten Sie im Gegenzug?"
+    label_en: "12. What would you need in return?"
+    options:
+      - {value: compensation, label_de: "Finanzieller Ausgleich", label_en: "Financial compensation"}
+      - {value: guarantee,    label_de: "Garantie der Komfort- und Hygienestandards", label_en: "Guarantee of comfort and hygiene standards"}
+      - {value: support,      label_de: "Technische Unterstützung / Investitionsförderung", label_en: "Technical support / investment"}
+      - {value: simple,       label_de: "Einfacher Vertrag, geringer Aufwand", label_en: "Simple contract / low admin effort"}
+      - {value: other,        label_de: "Sonstiges", label_en: "Other"}
+  - id: q12_barriers
+    step: 3
+    type: multi
+    origin: draft
+    feeds: research
+    label_de: "Wichtigste Hindernisse"
+    label_en: "Main barriers"
+    options:
+      - {value: comfort,   label_de: "Komfort / Beschwerden der Gäste", label_en: "Comfort / visitor complaints"}
+      - {value: hygiene,   label_de: "Gesundheits- und Hygienevorgaben", label_en: "Health and hygiene rules"}
+      - {value: technical, label_de: "Technische Grenzen", label_en: "Technical limits"}
+      - {value: staff,     label_de: "Personal / Zeit fehlt", label_en: "Lack of staff / time"}
+      - {value: financial, label_de: "Unklarer finanzieller Nutzen", label_en: "Unclear financial benefit"}
+      - {value: other,     label_de: "Sonstiges", label_en: "Other"}
+  - id: q12_other
+    step: 3
+    type: text
+    origin: draft
+    feeds: research
+    label_de: "Sonstiges (Bedarf oder Hindernis)"
+    label_en: "Other (need or barrier)"
+  - id: q12b_model
+    step: 3
+    type: single
+    origin: added
+    feeds: research
+    label_de: "Welches Modell wäre für Sie am attraktivsten?"
+    label_en: "Which model would be most attractive to you?"
+    options:
+      - {value: fixed,   label_de: "Feste Vergütung für bereitgestellte Flexibilität", label_en: "Fixed payment for flexibility provided"}
+      - {value: share,   label_de: "Beteiligung an den eingesparten Kosten", label_en: "Share of the savings"}
+      - {value: tariff,  label_de: "Günstigerer Stromtarif bei Abregelung", label_en: "Cheaper electricity tariff during curtailment"}
+      - {value: capex,   label_de: "Zuschuss zur Investition", label_en: "Investment grant"}
+      - {value: none,    label_de: "Keines davon", label_en: "None of these"}
+  - id: q12c_decision
+    step: 3
+    type: single
+    origin: added
+    feeds: research
+    label_de: "Wer entscheidet über Investitionen in die Wärmeversorgung?"
+    label_en: "Who decides on investments in the heat supply?"
+    options:
+      - {value: operator, label_de: "Betriebsleitung allein", label_en: "Operator alone"}
+      - {value: owner,    label_de: "Eigentümerin (Verwaltung / Gesellschafter)", label_en: "Owner (administration / shareholders)"}
+      - {value: council,  label_de: "Gemeinderat / Aufsichtsgremium", label_en: "Council / supervisory board"}
+      - {value: unknown,  label_de: "Weiß ich nicht", label_en: "Don't know"}
+  - id: q13_interest
+    step: 3
+    type: single
+    origin: draft
+    feeds: research
+    label_de: "13. Interesse an erneuerbarer Energie für die Beckenbeheizung"
+    label_en: "13. Interest in renewable energy for pool heating"
+    options:
+      - {value: interested,  label_de: "Interessiert", label_en: "Interested"}
+      - {value: using,       label_de: "Bereits im Einsatz", label_en: "Already using"}
+      - {value: planned,     label_de: "Geplant", label_en: "Planned"}
+      - {value: considering, label_de: "In Erwägung", label_en: "Considering"}
+      - {value: not_planned, label_de: "Nicht geplant", label_en: "Not planned"}
+  - id: q13_which
+    step: 3
+    type: multi
+    origin: draft
+    feeds: research
+    show_if: {id: q13_interest, in: [interested, using, planned, considering]}
+    label_de: "Welche?"
+    label_en: "Which?"
+    options:
+      - {value: heat_pump,    label_de: "Wärmepumpe", label_en: "Heat pump"}
+      - {value: solar_thermal,label_de: "Solarthermie", label_en: "Solar thermal"}
+      - {value: pv,           label_de: "PV", label_en: "PV"}
+      - {value: biomass,      label_de: "Biomasse", label_en: "Biomass"}
+      - {value: renew_dh,     label_de: "Erneuerbare Fernwärme", label_en: "Renewable district heating"}
+      - {value: other,        label_de: "Sonstige", label_en: "Other"}
+
+  # ------------------------------------------------------------------ step 4 (after the results)
+  - id: q10_post
+    step: 4
+    type: scale
+    origin: added
+    feeds: research
+    label_de: "Nach Ansicht Ihrer Ergebnisse: Wie bereit wären Sie jetzt, Ihr Bad flexibler zu beheizen?"
+    label_en: "After seeing your results: how willing would you be now to heat your pool more flexibly?"
+    scale:
+      - {value: 1, label_de: "Gar nicht", label_en: "Not at all"}
+      - {value: 2, label_de: "Eher nicht", label_en: "Unlikely"}
+      - {value: 3, label_de: "Unentschieden", label_en: "Undecided"}
+      - {value: 4, label_de: "Wahrscheinlich", label_en: "Likely"}
+      - {value: 5, label_de: "Sehr bereit", label_en: "Very willing"}
+  - id: q10_post_useful
+    step: 4
+    type: scale
+    origin: added
+    feeds: research
+    label_de: "Wie nützlich sind diese Ergebnisse für Sie?"
+    label_en: "How useful are these results to you?"
+    scale:
+      - {value: 1, label_de: "Gar nicht", label_en: "Not at all"}
+      - {value: 2, label_de: "Wenig", label_en: "A little"}
+      - {value: 3, label_de: "Teilweise", label_en: "Somewhat"}
+      - {value: 4, label_de: "Nützlich", label_en: "Useful"}
+      - {value: 5, label_de: "Sehr nützlich", label_en: "Very useful"}
+  - id: q10_post_comment
+    step: 4
+    type: textarea
+    origin: added
+    feeds: research
+    label_de: "Was stimmt nicht oder fehlt aus Ihrer Sicht? (optional)"
+    label_en: "What looks wrong or is missing from your view? (optional)"
+
+  # ------------------------------------------------------------------ step 5 (optional refinement)
+  - id: r_shower_litres
+    step: 5
+    type: number
+    origin: added
+    feeds: calculation
+    min: 5
+    max: 200
+    unit: "L"
+    label_de: "Duschwasser je Besucher (Liter, wenn bekannt)"
+    label_en: "Shower water per visitor (litres, if known)"
+    help_de: "Ohne Angabe rechnet das Modell mit 50 Litern (untere Grenze von 50 bis 80 Litern nach VDI 2089 Blatt 1)."
+    help_en: "Without an answer the model uses 50 litres (lower end of 50 to 80 litres in VDI 2089 part 1)."
+  - id: r_boiler_age
+    step: 5
+    type: number
+    origin: added
+    feeds: calculation
+    min: 0
+    max: 60
+    unit: "a"
+    label_de: "Alter des Hauptkessels (Jahre)"
+    label_en: "Age of the main boiler (years)"
+  - id: r_boiler_eta
+    step: 5
+    type: number
+    origin: added
+    feeds: calculation
+    min: 50
+    max: 120
+    unit: "%"
+    label_de: "Kesselwirkungsgrad (%, falls bekannt)"
+    label_en: "Boiler efficiency (%, if known)"
+  - id: r_grid_kw
+    step: 5
+    type: number
+    origin: added
+    feeds: calculation
+    min: 0
+    unit: "kW"
+    label_de: "Anschlussleistung Strom (kW)"
+    label_en: "Electrical connection capacity (kW)"
+  - id: r_dh_contract
+    step: 5
+    type: single
+    origin: added
+    feeds: calculation
+    show_if: {id: q7_sources, in: [district_heat]}
+    label_de: "Bindet Sie ein Fernwärmevertrag (Anschluss- und Abnahmepflicht)?"
+    label_en: "Does a district heating contract bind you (connection and take-or-pay)?"
+    options:
+      - {value: "yes",   label_de: "Ja", label_en: "Yes"}
+      - {value: "no",    label_de: "Nein", label_en: "No"}
+      - {value: unknown, label_de: "Weiß ich nicht", label_en: "Don't know"}
+  - id: r_hp_source
+    step: 5
+    type: single
+    origin: added
+    feeds: calculation
+    label_de: "Wärmequelle für eine Wärmepumpe"
+    label_en: "Heat source for a heat pump"
+    options:
+      - {value: air,    label_de: "Außenluft", label_en: "Outdoor air"}
+      - {value: ground, label_de: "Erdreich (Sonden, Kollektor)", label_en: "Ground (probes, collector)"}
+      - {value: waste,  label_de: "Abwärme (z. B. Abwasser, Abluft)", label_en: "Waste heat (e.g. waste water, exhaust air)"}
+
+  # ------------------------------------------------------------------ step 6
+  - id: q14_interview
+    step: 6
+    type: single
+    origin: draft
+    required: true
+    feeds: research
+    label_de: "14. Würden Sie an einem Folgegespräch teilnehmen?"
+    label_en: "14. Would you join for a follow-up interview?"
+    options:
+      - {value: "yes",   label_de: "Ja", label_en: "Yes"}
+      - {value: maybe,   label_de: "Vielleicht", label_en: "Maybe"}
+      - {value: "no",    label_de: "Nein", label_en: "No"}
+  - id: q14_comments
+    step: 6
+    type: textarea
+    origin: draft
+    feeds: research
+    label_de: "Weitere Anmerkungen"
+    label_en: "Any other comments"
+  - id: q14_contact_name
+    step: 6
+    type: text
+    origin: draft
+    feeds: contact
+    label_de: "Name (optional)"
+    label_en: "Name (optional)"
+  - id: q14_contact_email
+    step: 6
+    type: text
+    origin: draft
+    feeds: contact
+    label_de: "E-Mail oder Telefon (optional)"
+    label_en: "Email or phone (optional)"
+  - id: q14_contact_method
+    step: 6
+    type: single
+    origin: draft
+    feeds: contact
+    label_de: "Bevorzugter Kontaktweg"
+    label_en: "Preferred contact method"
+    options:
+      - {value: email,  label_de: "E-Mail", label_en: "Email"}
+      - {value: phone,  label_de: "Telefon", label_en: "Phone"}
+  - id: q14_consent
+    step: 6
+    type: checkbox
+    origin: draft
+    feeds: contact
+    label_de: "Ich bin einverstanden, dass meine Kontaktdaten gespeichert und genutzt werden, um mich zu diesem Projekt zu kontaktieren (Einwilligung nach Datenschutz)."
+    label_en: "I agree that my contact details may be stored and used to contact me about this project (data protection consent)."
+  - id: q14_summary
+    step: 6
+    type: checkbox
+    origin: added
+    feeds: contact
+    label_de: "Ich möchte die Zusammenfassung der Ergebnisse erhalten."
+    label_en: "I would like to receive the summary of the findings."

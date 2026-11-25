@@ -1,0 +1,137 @@
+facility_id,name,badtyp,weather_zone_id,curtail_zone_id,season_start_month,season_end_month,temporarily_closed_flag,n_basins,season_applies_to
+1,Geestlandbad Kropp,Freibad,T6,T6,3,8,0,3,all
+2,Freibad Risum,Freibad,T5,T5,5,9,0,1,all
+3,Freibad Stadum,Freibad,T5,T5,5,9,0,1,all
+4,Freibad Süderlügum,Freibad,T5,T5,5,9,0,1,all
+5,Freibad Enge-Sande,Freibad,T5,T5,5,9,0,1,all
+6,Freibad Aventoft,Freibad,T5,T5,6,8,0,1,all
+7,Schwimmbad Nordstrand,Hallenbad,T5,T5,1,12,0,2,all
+8,Freibad Ostenfeld,Freibad,T5,T5,5,9,0,1,all
+9,Freibad Rantrum,Freibad,T5,T5,5,9,0,2,all
+10,Holstein Therma Bad Schwartau,Hallenbad,T6,T6,1,12,0,3,all
+11,Kirsten-Bruhn-Bad,Hallenbad,T6,T6,1,12,0,2,all
+12,Waldschwimmbad Lensahn,Freibad,T6,T6,5,9,0,4,all
+13,Sport- und Bildungszentrum Malente,Hallenbad,T6,T6,1,12,0,1,all
+14,Meerwasserhallenbad Niendorf/Ostsee,Hallenbad,T6,T6,1,12,0,2,all
+15,Badewonne,Kombibad,T6,T6,5,9,0,4,outdoor_basins
+16,Badepark Elmshorn,Kombibad,T6,T6,6,9,0,5,outdoor_basins
+17,Bäder Pinneberg,Hallenbad,T6,T6,5,8,0,5,all
+18,Freibad Quickborn,Freibad,T6,T6,5,9,0,4,all
+19,Lehrschwimmbad Gorch-Fock Schule,Schulbad,T6,T6,1,12,0,1,all
+20,Jürgen Frenzel Schwimmhalle,Hallenbad,T6,T6,1,12,0,2,all
+21,Wasserwelt Ellerbek,Hallenbad,T6,T6,1,12,0,1,all
+22,Plönbad,Hallenbad,T6,T6,1,12,0,2,all
+23,Kulturforum Schwimmhalle Plön,Hallenbad,T6,T6,1,12,0,1,all
+24,Preetzer Schwimmhalle,Hallenbad,T6,T6,1,12,0,2,all
+25,DRK Schul- und Therapiezentrum Raisdorf,Hallenbad,T6,T6,1,12,0,1,all
+26,Freibad Büdelsdorf,Freibad,T6,T6,5,9,0,1,all
+27,Freibad Flintek,Freibad,T6,T6,5,9,0,1,all
+28,Freibad Fockbek,Freibad,T6,T6,5,9,0,3,all
+29,Freibad Nübbel,Freibad,T6,T6,5,9,0,2,all
+30,Freibad Elsdorf-Westermühlen,Freibad,T6,T6,5,9,0,1,all
+31,Freibad Jevenstedt,Freibad,T6,T6,5,9,0,1,all
+32,Grundschule an den Eichen,Schulbad,T6,T6,1,12,0,1,all
+33,Grundschule Rammsee,Schulbad,T6,T6,1,12,0,1,all
+34,Schwimmschule Molfsee,Hallenbad,T6,T6,1,12,0,1,all
+35,Freibad Timmaspe,Freibad,T6,T6,5,9,0,3,all
+36,Freibad Bokel,Freibad,T6,T6,5,9,0,3,all
+37,Aqua City,Kombibad,T6,T6,5,9,0,9,outdoor_basins
+38,Schwimmbad Osterrönfeld,Freibad,T6,T6,5,9,0,2,all
+39,Freibad Batz,Freibad,T6,T6,5,9,0,3,all
+40,Freibad Beringstedt,Freibad,T6,T6,6,8,0,3,all
+41,Freibad Aukrug,Freibad,T6,T6,5,9,0,2,all
+42,Lehrschwimmbad Eggebek,Hallenbad,T6,T6,1,12,0,1,all
+43,Aquasportcenter,Hallenbad,T6,T6,1,12,0,1,all
+44,Schaulandhalle Jarplund,Hallenbad,T6,T6,1,12,0,1,all
+45,Campingplatz Jarplund,Freibad,T6,T6,5,9,0,1,all
+46,Schwimmhalle Harrislee,Hallenbad,T6,T6,1,12,0,1,all
+47,Lehrschwimmbecken Munkbrarup,Schulbad,T6,T6,1,12,0,1,all
+48,Schwimmbad Sieverstedt,Freibad,T6,T6,5,9,0,3,all
+49,Freibad Tarp,Freibad,T6,T6,5,9,0,2,all
+50,Freibad Satrup,Freibad,T6,T6,5,9,0,1,all
+51,Fjordarium,Hallenbad,T6,T6,1,12,0,3,all
+52,Freibad Süderbrarup,Freibad,T6,T6,5,9,0,1,all
+53,Lehrschwimmbad Sterup,Schulbad,T6,T6,1,12,0,1,all
+54,Freibad Erfde,Freibad,T6,T6,5,9,0,3,all
+55,Warmwasserfreibad Wiemersdorf,Freibad,T6,T6,5,9,0,3,all
+56,Warmwasserfreibad der Roland Oase,Freibad,T6,T6,5,9,0,3,all
+57,Waldschwimmbad Trappenkamp,Freibad,T6,T6,5,9,0,2,all
+58,Freibad Ellerau,Freibad,T6,T6,5,9,0,1,all
+59,Freibad Alveslohe,Freibad,T6,T6,5,9,0,1,all
+60,Freibad Lentföhrde,Freibad,T6,T6,6,9,0,2,all
+61,Freibad Struvenhütten,Freibad,T6,T6,5,9,0,2,all
+62,Lehrschwimmbecken Pestalozzistraße,Schulbad,T6,T6,1,12,0,1,all
+63,Freibad Rickling,Freibad,T6,T6,5,9,0,3,all
+64,Aqua Fun Wahlstedt,Kombibad,T6,T6,5,9,0,3,outdoor_basins
+65,Freibad Lägerdorf,Freibad,T6,T6,5,9,0,3,all
+66,Fortuna-Bad,Freibad,T6,T6,5,9,0,4,all
+67,Freibad Horst,Freibad,T6,T6,5,9,0,2,all
+68,H2O Horst,Hallenbad,T6,T6,1,12,0,1,all
+69,Schwimmzentrum Itzehoe,Kombibad,T6,T6,5,9,0,2,outdoor_basins
+70,Freibad Krempe,Freibad,T6,T6,5,9,0,4,all
+71,Freibad Wacken,Freibad,T6,T6,5,9,0,2,all
+72,Grund- und Gesamtschule Schenefeld,Schulbad,T6,T6,1,12,0,1,all
+73,Freibad an Diek,Freibad,T6,T6,5,9,0,3,all
+74,Hallenbad Wilster,Hallenbad,T6,T6,10,4,0,2,all
+75,Freibad Quarnstedt,Freibad,T6,T6,5,9,0,1,all
+76,Freibad Kellinghusen,Freibad,T6,T6,5,9,0,3,all
+77,Freibad Brokstedt,Freibad,T6,T6,5,9,0,1,all
+78,Schwimmbad Grundschule Hohenlockstedt,Schulbad,T6,T6,1,12,0,1,all
+79,Badlantic Freizeitbad Ahrensburg,Kombibad,T6,T6,5,9,0,4,outdoor_basins
+80,Woldenhorn Schule,Schulbad,T6,T6,1,12,0,2,all
+81,Travebad,Hallenbad,T6,T6,1,12,0,4,all
+82,Freibad Bargteheide,Freibad,T6,T6,5,9,0,3,all
+83,Schwimmhalle Barsbüttel,Hallenbad,T6,T6,1,12,0,2,all
+84,Grundschule Tannenweg,Schulbad,T6,T6,1,12,0,1,all
+85,Schönaubad,Freibad,T6,T6,5,9,0,3,all
+86,Steinburgschule,Schulbad,T6,T6,1,12,0,1,all
+87,Quellenbad Bunsoh,Freibad,T5,T5,5,8,0,1,all
+88,Freizeitbad Albersdorf,Freibad,T5,T5,5,9,0,3,all
+89,Waldschwimmbad Nordhastedt,Freibad,T5,T5,5,9,0,2,all
+90,Freibad Hemmingstedt,Freibad,T5,T5,5,10,0,1,all
+91,Freibad Dellstedt,Freibad,T5,T5,5,9,0,2,all
+92,Freibad Pahlen,Freibad,T5,T5,5,9,0,2,all
+93,Freibad Wrohm,Freibad,T5,T5,5,9,0,1,all
+94,Schwimmbad Hennstedt,Freibad,T5,T5,5,9,0,1,all
+95,Freibad Lunden,Freibad,T5,T5,5,9,0,1,all
+96,Schwimmhalle Marne,Hallenbad,T5,T5,1,12,0,2,all
+97,Waldschwimmbad Brug,Freibad,T5,T5,5,9,0,3,all
+98,Dithmarscher Wasserwelt,Kombibad,T5,T5,5,9,0,4,outdoor_basins
+99,Freibad Ulitzhörn,Freibad,T5,T5,5,8,0,2,all
+100,Freibad Schlutup,Freibad,T6,T6,5,9,0,3,all
+101,Freibad Moisling,Freibad,T6,T6,5,9,0,2,all
+102,Schwimmbad Kücknitz,Hallenbad,T6,T6,1,12,0,1,all
+103,Zentralbad Lübeck,Hallenbad,T6,T6,1,12,0,2,all
+104,Sportbad St. Lorenz,Hallenbad,T6,T6,1,12,0,2,all
+105,Schwimmbad Max-Planck Schule,Schulbad,T6,T6,1,12,0,1,all
+106,Eiderbad Hammer,Freibad,T6,T6,5,9,0,1,all
+107,Sommerbad Katzheide,Freibad,T6,T6,5,9,0,1,all
+108,Schwimmhalle Schilksee,Hallenbad,T6,T6,1,12,1,1,all
+109,Hörnbad,Hallenbad,T6,T6,1,12,0,6,all
+110,Campusbad Flensburg,Kombibad,T6,T6,5,9,0,7,outdoor_basins
+111,Freibad Weiche,Freibad,T6,T6,5,9,0,1,all
+112,Hallenbad Niebüll,Hallenbad,T5,T5,1,12,0,2,all
+113,Freibad Neukirchen,Freibad,T5,T5,5,9,0,2,all
+114,Freibad Klixbüll,Freibad,T5,T5,5,9,0,2,all
+115,Freibad Dagebüll,Freibad,T5,T5,5,9,0,1,all
+116,Freibad Tönning,Freibad,T5,T5,5,9,0,3,all
+117,Freibad Högel,Freibad,T5,T5,7,9,0,2,all
+118,Schwimmbad Drelsdorf,Freibad,T5,T5,5,8,0,1,all
+119,Freibad Breklum,Freibad,T5,T5,5,9,0,3,all
+120,Grundschule Bredstedt,Schulbad,T5,T5,1,12,0,1,all
+121,Erlebnisfreibad Bredstedt,Freibad,T5,T5,5,9,0,3,all
+122,Freibad Bordelum,Freibad,T5,T5,5,9,0,2,all
+123,Freibad Viöl,Freibad,T5,T5,5,9,0,2,all
+124,Schwimmbad Ohrstedt,Freibad,T5,T5,5,9,0,1,all
+125,Freibad Nostedt,Freibad,T5,T5,5,9,0,1,all
+126,Freibad Haselund,Freibad,T5,T5,6,9,0,1,all
+127,Hallenbad Husum,Hallenbad,T5,T5,1,12,0,3,all
+128,Freibad Steinhorst,Freibad,T6,T6,5,9,0,2,all
+129,Gemeinschaftsschule Wentorf,Schulbad,T6,T6,1,12,0,1,all
+130,Aqua Siwa Ratzeburg,Hallenbad,T6,T6,1,12,0,2,all
+131,Augustinum Mölln,Hallenbad,T6,T6,1,12,0,1,all
+132,Freibad Lauenburg,Freibad,T6,T6,5,9,0,3,all
+133,Freizeitbad Geesthacht,Freibad,T6,T6,5,9,0,4,all
+134,Freibad Wesselburen,Freibad,T5,T5,5,9,0,3,all
+135,Schwimmbad Schafstedt,Freibad,T5,T5,5,9,0,3,all
+136,Hallen- und Freibad Meldorf,Kombibad,T5,T5,5,9,0,3,outdoor_basins

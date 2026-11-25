@@ -1,0 +1,13 @@
+month,T_re_outdoor_c,T_wn_indoor_c,source
+1,7.0,7.0,synthetic_assumption: typical German mains water temperature
+2,6.5,6.5,synthetic_assumption: typical German mains water temperature
+3,7.5,7.5,synthetic_assumption: typical German mains water temperature
+4,9.0,9.0,synthetic_assumption: typical German mains water temperature
+5,11.0,11.0,synthetic_assumption: typical German mains water temperature
+6,13.5,13.5,synthetic_assumption: typical German mains water temperature
+7,15.5,15.5,synthetic_assumption: typical German mains water temperature
+8,16.5,16.5,synthetic_assumption: typical German mains water temperature
+9,15.5,15.5,synthetic_assumption: typical German mains water temperature
+10,13.0,13.0,synthetic_assumption: typical German mains water temperature
+11,10.0,10.0,synthetic_assumption: typical German mains water temperature
+12,8.0,8.0,synthetic_assumption: typical German mains water temperature

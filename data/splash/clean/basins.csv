@@ -1,0 +1,287 @@
+basin_id,facility_id,facility_name,badtyp,size_class,typology_key,environment,environment_source,area_m2,volume_m3,perimeter_m,side_area_m2,area_source,depth_source,perimeter_source,hall_id,f_act_value,band_override_min_c,band_override_max_c,model_status,curtail_zone_id,weather_zone_id
+6810,1,Geestlandbad Kropp,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,baederleben_location,759.0,1574.925,112.0,232.4,measured_length_x_width,estimated_class_default,measured_length_width,,1.0,,,ok,T6,T6
+6811,1,Geestlandbad Kropp,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,baederleben_location,391.0,391.0,80.0,80.0,measured_area,estimated_class_default,measured_length_width,,1.0,,,ok,T6,T6
+6812,1,Geestlandbad Kropp,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,baederleben_location,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8326,2,Freibad Risum,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+8488,3,Freibad Stadum,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+8521,4,Freibad Süderlügum,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+14134,5,Freibad Enge-Sande,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+12192,6,Freibad Aventoft,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+8123,7,Schwimmbad Nordstrand,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,346.5,866.25,78.97,197.42,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H007,1.0,,,ok,T5,T5
+8124,7,Schwimmbad Nordstrand,Hallenbad,Warm/Sprudel/Tret,Hallenbad|Warm/Sprudel/Tret,indoor,badtyp_rule,12.0,10.8,14.31,12.88,synthetic_plausible,synthetic_plausible,estimated_aspect_ratio,H007,0.65,,,ok,T5,T5
+8129,8,Freibad Ostenfeld,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+8282,9,Freibad Rantrum,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+8283,9,Freibad Rantrum,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+16067,10,Holstein Therma Bad Schwartau,Hallenbad,Nichtschwimmer,Hallenbad|Nichtschwimmer,indoor,badtyp_rule,300.0,285.0,70.14,66.63,measured_area,estimated_class_default,estimated_aspect_ratio,H010,1.0,,,ok,T6,T6
+16068,10,Holstein Therma Bad Schwartau,Hallenbad,Nichtschwimmer,Hallenbad|Nichtschwimmer,indoor,badtyp_rule,300.0,285.0,70.14,66.63,measured_area,estimated_class_default,estimated_aspect_ratio,H010,1.0,,,ok,T6,T6
+16069,10,Holstein Therma Bad Schwartau,Hallenbad,Warm/Sprudel/Tret,Hallenbad|Warm/Sprudel/Tret,indoor,badtyp_rule,6.0,2.4000000000000004,10.12,4.05,synthetic_plausible,synthetic_plausible,estimated_aspect_ratio,H010,0.5,,,ok,T6,T6
+11864,11,Kirsten-Bruhn-Bad,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,346.5,866.25,78.97,197.42,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H011,1.0,,,ok,T6,T6
+11865,11,Kirsten-Bruhn-Bad,Hallenbad,Kleinkind,Hallenbad|Kleinkind,indoor,badtyp_rule,42.32,11.638,26.56,7.3,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H011,1.0,,,ok,T6,T6
+7337,12,Waldschwimmbad Lensahn,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,1250.0,2593.75,150.0,311.25,estimated_length_x_std_width,estimated_class_default,derived_length_area,,1.0,,,ok,T6,T6
+7338,12,Waldschwimmbad Lensahn,Freibad,Sprung/Tauch,Freibad|Sprung/Tauch,outdoor,badtyp_rule,144.0,460.8,48.09,153.89,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,0.65,,,ok,T6,T6
+7339,12,Waldschwimmbad Lensahn,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,325.0,73.01,73.01,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+7340,12,Waldschwimmbad Lensahn,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8073,13,Sport- und Bildungszentrum Malente,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,555.44445,1388.611125,99.99,249.98,estimated_length_x_std_width,estimated_class_default,derived_length_area,H013,1.0,,,ok,T6,T6
+8548,14,Meerwasserhallenbad Niendorf/Ostsee,Hallenbad,Kleinkind,Hallenbad|Kleinkind,indoor,badtyp_rule,42.32,11.638,26.56,7.3,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H014,1.0,,,ok,T6,T6
+8549,14,Meerwasserhallenbad Niendorf/Ostsee,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,346.5,866.25,78.97,197.42,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H014,1.0,,,ok,T6,T6
+16368,15,Badewonne,Kombibad,Wellen/Natur,Kombibad|Wellen/Natur,indoor,synthetic_rule_kombibad,600.0,600.0,101.19,101.19,synthetic_plausible,synthetic_plausible,estimated_aspect_ratio,H015,1.75,,,ok,T6,T6
+16369,15,Badewonne,Kombibad,Warm/Sprudel/Tret,Kombibad|Warm/Sprudel/Tret,indoor,synthetic_rule_kombibad,12.0,10.8,14.31,12.88,synthetic_plausible,synthetic_plausible,estimated_aspect_ratio,H015,0.65,,,ok,T6,T6
+16370,15,Badewonne,Kombibad,Nichtschwimmer,Kombibad|Nichtschwimmer,outdoor,synthetic_rule_kombibad,125.0,118.75,45.28,43.02,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+16371,15,Badewonne,Kombibad,Wellen/Natur,Kombibad|Wellen/Natur,outdoor,synthetic_rule_kombibad,800.0,1120.0,116.85,163.59,synthetic_plausible,synthetic_plausible,estimated_aspect_ratio,,0.5,,,ok,T6,T6
+2332,16,Badepark Elmshorn,Kombibad,Schwimmer,Kombibad|Schwimmer,outdoor,synthetic_rule_kombibad,1000.0,2000.0,140.0,280.0,measured_area,measured,measured_length_width,,1.0,,,ok,T6,T6
+19886,16,Badepark Elmshorn,Kombibad,Kurs/Lehr,Kombibad|Kurs/Lehr,indoor,synthetic_rule_kombibad,160.0,182.4,51.28,58.46,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H016,0.65,,,ok,T6,T6
+19887,16,Badepark Elmshorn,Kombibad,Schwimmer,Kombibad|Schwimmer,indoor,synthetic_rule_kombibad,750.0,2010.0,116.19,311.39,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H016,1.0,,,ok,T6,T6
+19888,16,Badepark Elmshorn,Kombibad,Kurs/Lehr,Kombibad|Kurs/Lehr,indoor,synthetic_rule_kombibad,160.0,182.4,51.28,58.46,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H016,0.65,,,ok,T6,T6
+19889,16,Badepark Elmshorn,Kombibad,Schwimmer,Kombibad|Schwimmer,indoor,synthetic_rule_kombibad,750.0,2010.0,116.19,311.39,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H016,1.0,,,ok,T6,T6
+8242,17,Bäder Pinneberg,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,833.0,1790.95,133.32,286.64,measured_area,measured,measured_length_width,H017,1.0,,,ok,T6,T6
+8243,17,Bäder Pinneberg,Hallenbad,Sprung/Tauch,Hallenbad|Sprung/Tauch,indoor,badtyp_rule,137.5,316.25,47.0,108.1,measured_area,measured,measured_length_width,H017,0.65,,,ok,T6,T6
+8244,17,Bäder Pinneberg,Hallenbad,Schwimmer,Hallenbad|Schwimmer,outdoor,text_cue_check,318.0,795.0,75.44,188.6,measured_area,estimated_class_default,measured_length_width,,1.0,,,ok,T6,T6
+8245,17,Bäder Pinneberg,Hallenbad,Kleinkind,Hallenbad|Kleinkind,indoor,text_cue_check,12.0,3.3,14.14,3.89,measured_area,estimated_class_default,estimated_aspect_ratio,H017,1.0,,,ok,T6,T6
+19923,17,Bäder Pinneberg,Hallenbad,Kleinkind,Hallenbad|Kleinkind,outdoor,text_cue_check,46.0,13.8,27.69,8.31,measured_area,measured,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+16380,18,Freibad Quickborn,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,baederleben_location,800.0,1200.0,132.0,198.0,measured_area,measured,measured_length_width,,1.0,,,ok,T6,T6
+16381,18,Freibad Quickborn,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,baederleben_location,60.0,18.0,36.0,10.8,measured_area,measured,measured_length_width,,1.0,,,ok,T6,T6
+19949,18,Freibad Quickborn,Freibad,Sprung/Tauch,Freibad|Sprung/Tauch,outdoor,baederleben_location,144.0,576.0,48.0,192.0,measured_area,measured,measured_length_width,,0.65,,,ok,T6,T6
+19950,18,Freibad Quickborn,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,baederleben_location,250.0,250.0,72.0,72.0,measured_area,estimated_class_default,measured_length_width,,1.0,,,ok,T6,T6
+9770,19,Lehrschwimmbad Gorch-Fock Schule,Schulbad,Kurs/Lehr,Schulbad|Kurs/Lehr,indoor,baederleben_location,96.0,109.44,40.0,45.6,measured_length_x_width,estimated_class_default,measured_length_width,H019,0.65,,,ok,T6,T6
+8781,20,Jürgen Frenzel Schwimmhalle,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,312.5,781.25,75.0,187.5,estimated_length_x_std_width,estimated_class_default,derived_length_area,H020,1.0,,,ok,T6,T6
+8782,20,Jürgen Frenzel Schwimmhalle,Hallenbad,Nichtschwimmer,Hallenbad|Nichtschwimmer,indoor,badtyp_rule,133.28,126.616,46.75,44.41,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H020,1.0,,,ok,T6,T6
+16374,21,Wasserwelt Ellerbek,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,346.5,866.25,78.97,197.42,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H021,1.0,,,ok,T6,T6
+8246,22,Plönbad,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,312.5,781.25,75.0,187.5,estimated_length_x_std_width,estimated_class_default,derived_length_area,H022,1.0,,,ok,T6,T6
+8247,22,Plönbad,Hallenbad,Kleinkind,Hallenbad|Kleinkind,indoor,badtyp_rule,42.32,11.638,26.56,7.3,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H022,1.0,,,ok,T6,T6
+19615,23,Kulturforum Schwimmhalle Plön,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,346.5,866.25,78.97,197.42,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H023,1.0,,,ok,T6,T6
+15867,24,Preetzer Schwimmhalle,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,346.5,866.25,78.97,197.42,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H024,1.0,,,ok,T6,T6
+15869,24,Preetzer Schwimmhalle,Hallenbad,Nichtschwimmer,Hallenbad|Nichtschwimmer,indoor,badtyp_rule,133.28,126.616,46.75,44.41,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H024,1.0,,,ok,T6,T6
+15870,25,DRK Schul- und Therapiezentrum Raisdorf,Hallenbad,Kurs/Lehr,Hallenbad|Kurs/Lehr,indoor,badtyp_rule,364.0,373.1,77.35,79.28,measured_area,estimated_class_default,estimated_aspect_ratio,H025,0.65,,,ok,T6,T6
+19760,26,Freibad Büdelsdorf,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,1250.0,1812.5,150.0,217.5,estimated_length_x_std_width,measured,derived_length_area,,1.0,,,ok,T6,T6
+2481,27,Freibad Flintek,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,500.0,1037.5,90.0,186.75,measured_area,estimated_class_default,measured_length_width,,1.0,,,ok,T6,T6
+19768,28,Freibad Fockbek,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,baederleben_location,72.0,21.96,34.64,10.57,estimated_class_default,measured,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+19769,28,Freibad Fockbek,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,baederleben_location,325.0,422.5,76.0,98.8,estimated_class_default,measured,derived_length_area,,1.0,,,ok,T6,T6
+19770,28,Freibad Fockbek,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,baederleben_location,425.0,1211.25,87.46,249.26,estimated_class_default,measured,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8126,29,Freibad Nübbel,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,312.5,648.4375,75.0,155.62,estimated_length_x_std_width,estimated_class_default,derived_length_area,,1.0,,,ok,T6,T6
+8127,29,Freibad Nübbel,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+2335,30,Freibad Elsdorf-Westermühlen,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,1250.0,2593.75,150.0,311.25,estimated_length_x_std_width,estimated_class_default,derived_length_area,,1.0,,,ok,T6,T6
+7679,31,Freibad Jevenstedt,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+15973,32,Grundschule an den Eichen,Schulbad,Kurs/Lehr,Schulbad|Kurs/Lehr,indoor,baederleben_location,160.0,182.4,51.28,58.46,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H032,0.65,,,ok,T6,T6
+15960,33,Grundschule Rammsee,Schulbad,Schwimmer,Schulbad|Schwimmer,indoor,baederleben_location,100.0,120.0,42.43,50.92,estimated_class_default,synthetic_plausible,estimated_aspect_ratio,H033,1.0,,,ok,T6,T6
+8082,34,Schwimmschule Molfsee,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,346.5,866.25,78.97,197.42,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H034,1.0,,,ok,T6,T6
+8529,35,Freibad Timmaspe,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,371.25,770.34375,82.0,170.15,measured_area,estimated_class_default,measured_length_width,,1.0,,,ok,T6,T6
+8530,35,Freibad Timmaspe,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,65.0,65.0,33.0,33.0,measured_length_x_width,estimated_class_default,measured_length_width,,1.0,,,ok,T6,T6
+8531,35,Freibad Timmaspe,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,100.0,25.0,40.0,10.0,measured_length_x_width,estimated_class_default,measured_length_width,,1.0,,,ok,T6,T6
+15943,36,Freibad Bokel,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,baederleben_location,312.5,726.5625,75.0,174.38,measured_area,measured,measured_length_width,,1.0,,,ok,T6,T6
+15944,36,Freibad Bokel,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,baederleben_location,75.0,84.375,35.0,39.38,measured_area,measured,measured_length_width,,1.0,,,ok,T6,T6
+15945,36,Freibad Bokel,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,baederleben_location,72.0,18.0,34.0,8.5,measured_area,estimated_class_default,measured_length_width,,1.0,,,ok,T6,T6
+8314,37,Aqua City,Kombibad,Schwimmer,Kombibad|Schwimmer,indoor,synthetic_rule_kombibad,375.0,1005.0,80.0,214.4,measured_length_x_width,estimated_class_default,measured_length_width,H037,1.0,,,ok,T6,T6
+8315,37,Aqua City,Kombibad,Nichtschwimmer,Kombibad|Nichtschwimmer,indoor,synthetic_rule_kombibad,125.0,118.75,45.0,42.75,measured_length_x_width,estimated_class_default,measured_length_width,H037,1.0,,,ok,T6,T6
+8316,37,Aqua City,Kombibad,Kleinkind,Kombibad|Kleinkind,indoor,synthetic_rule_kombibad,53.0,14.575,29.72,8.17,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H037,1.0,,,ok,T6,T6
+8317,37,Aqua City,Kombibad,Warm/Sprudel/Tret,Kombibad|Warm/Sprudel/Tret,indoor,synthetic_rule_kombibad,12.0,10.8,14.31,12.88,synthetic_plausible,synthetic_plausible,estimated_aspect_ratio,H037,0.65,,,ok,T6,T6
+8318,37,Aqua City,Kombibad,Warm/Sprudel/Tret,Kombibad|Warm/Sprudel/Tret,indoor,synthetic_rule_kombibad,12.0,10.8,14.31,12.88,synthetic_plausible,synthetic_plausible,estimated_aspect_ratio,H037,0.65,,,ok,T6,T6
+8319,37,Aqua City,Kombibad,Schwimmer,Kombibad|Schwimmer,outdoor,synthetic_rule_kombibad,1000.0,2680.0,140.0,375.2,measured_length_x_width,estimated_class_default,measured_length_width,,1.0,,,ok,T6,T6
+8320,37,Aqua City,Kombibad,Nichtschwimmer,Kombibad|Nichtschwimmer,outdoor,synthetic_rule_kombibad,900.0,765.0,121.49,103.27,measured_area,measured,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8321,37,Aqua City,Kombibad,Sprung/Tauch,Kombibad|Sprung/Tauch,outdoor,synthetic_rule_kombibad,255.0,816.0,64.0,204.8,measured_length_x_width,estimated_class_default,measured_length_width,,0.65,,,ok,T6,T6
+8322,37,Aqua City,Kombibad,Kleinkind,Kombibad|Kleinkind,outdoor,synthetic_rule_kombibad,53.0,14.575,29.72,8.17,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8131,38,Schwimmbad Osterrönfeld,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8132,38,Schwimmbad Osterrönfeld,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8526,39,Freibad Batz,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,1250.0,2593.75,150.0,311.25,estimated_length_x_std_width,estimated_class_default,derived_length_area,,1.0,,,ok,T6,T6
+8527,39,Freibad Batz,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,325.0,73.01,73.01,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8528,39,Freibad Batz,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+15939,40,Freibad Beringstedt,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,312.5,648.4375,75.0,155.62,estimated_length_x_std_width,estimated_class_default,derived_length_area,,1.0,,,ok,T6,T6
+15940,40,Freibad Beringstedt,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,325.0,73.01,73.01,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+15941,40,Freibad Beringstedt,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+5319,41,Freibad Aukrug,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+5320,41,Freibad Aukrug,Freibad,Sprung/Tauch,Freibad|Sprung/Tauch,outdoor,badtyp_rule,144.0,460.8,48.09,153.89,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,0.65,,,ok,T6,T6
+19547,42,Lehrschwimmbad Eggebek,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,346.5,866.25,78.97,197.42,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H042,1.0,,,ok,T6,T6
+11665,43,Aquasportcenter,Hallenbad,Kurs/Lehr,Hallenbad|Kurs/Lehr,indoor,badtyp_rule,160.0,164.0,51.28,52.56,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H043,0.65,,,ok,T6,T6
+11777,44,Schaulandhalle Jarplund,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,346.5,866.25,78.97,197.42,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H044,1.0,,,ok,T6,T6
+15862,45,Campingplatz Jarplund,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+11776,46,Schwimmhalle Harrislee,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,baederleben_location,125.63,226.134,48.5,87.3,measured_area,measured,measured_length_width,H046,1.0,,,ok,T6,T6
+8801,47,Lehrschwimmbecken Munkbrarup,Schulbad,Schwimmer,Schulbad|Schwimmer,indoor,baederleben_location,200.0,240.0,66.0,79.2,measured_length_x_width,synthetic_plausible,measured_length_width,H047,1.0,,,ok,T6,T6
+8382,48,Schwimmbad Sieverstedt,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8383,48,Schwimmbad Sieverstedt,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,325.0,73.01,73.01,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8384,48,Schwimmbad Sieverstedt,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8524,49,Freibad Tarp,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8525,49,Freibad Tarp,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8330,50,Freibad Satrup,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8371,51,Fjordarium,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,312.5,781.25,75.0,187.5,estimated_length_x_std_width,estimated_class_default,derived_length_area,H051,1.0,,,ok,T6,T6
+8372,51,Fjordarium,Hallenbad,Kleinkind,Hallenbad|Kleinkind,indoor,badtyp_rule,42.32,11.638,26.56,7.3,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H051,1.0,,,ok,T6,T6
+8374,51,Fjordarium,Hallenbad,Nichtschwimmer,Hallenbad|Nichtschwimmer,indoor,badtyp_rule,133.28,126.616,46.75,44.41,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H051,1.0,,,ok,T6,T6
+8520,52,Freibad Süderbrarup,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,312.5,656.25,75.0,157.5,measured_length_x_width,measured,measured_length_width,,1.0,,,ok,T6,T6
+8505,53,Lehrschwimmbad Sterup,Schulbad,Schwimmer,Schulbad|Schwimmer,indoor,baederleben_location,100.0,120.0,42.43,50.92,estimated_class_default,synthetic_plausible,estimated_aspect_ratio,H053,1.0,,,ok,T6,T6
+19765,54,Freibad Erfde,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+19766,54,Freibad Erfde,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+19767,54,Freibad Erfde,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8878,55,Warmwasserfreibad Wiemersdorf,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,450.0,933.75,86.0,178.45,measured_length_x_width,estimated_class_default,measured_length_width,,1.0,,,ok,T6,T6
+8879,55,Warmwasserfreibad Wiemersdorf,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,270.0,270.0,66.0,66.0,measured_length_x_width,estimated_class_default,measured_length_width,,1.0,,,ok,T6,T6
+8880,55,Warmwasserfreibad Wiemersdorf,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+20446,56,Warmwasserfreibad der Roland Oase,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+20447,56,Warmwasserfreibad der Roland Oase,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+20448,56,Warmwasserfreibad der Roland Oase,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,325.0,73.01,73.01,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8553,57,Waldschwimmbad Trappenkamp,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8554,57,Waldschwimmbad Trappenkamp,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+653,58,Freibad Ellerau,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,312.5,648.4375,75.0,155.62,estimated_length_x_std_width,estimated_class_default,derived_length_area,,1.0,,,ok,T6,T6
+5317,59,Freibad Alveslohe,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+7341,60,Freibad Lentföhrde,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,312.5,648.4375,75.0,155.62,estimated_length_x_std_width,estimated_class_default,derived_length_area,,1.0,,,ok,T6,T6
+7342,60,Freibad Lentföhrde,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8518,61,Freibad Struvenhütten,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,312.5,648.4375,75.0,155.62,measured_area,estimated_class_default,measured_length_width,,1.0,,,ok,T6,T6
+8519,61,Freibad Struvenhütten,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8121,62,Lehrschwimmbecken Pestalozzistraße,Schulbad,Schwimmer,Schulbad|Schwimmer,indoor,baederleben_location,87.5,91.875,39.0,40.95,measured_area,measured,measured_length_width,H062,1.0,,,ok,T6,T6
+8323,63,Freibad Rickling,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8324,63,Freibad Rickling,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,325.0,73.01,73.01,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8325,63,Freibad Rickling,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8787,64,Aqua Fun Wahlstedt,Kombibad,Kleinkind,Kombibad|Kleinkind,indoor,synthetic_rule_kombibad,53.0,14.575,29.72,8.17,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H064,1.0,,,ok,T6,T6
+8788,64,Aqua Fun Wahlstedt,Kombibad,Nichtschwimmer,Kombibad|Nichtschwimmer,indoor,synthetic_rule_kombibad,125.0,118.75,45.28,43.02,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H064,1.0,,,ok,T6,T6
+8789,64,Aqua Fun Wahlstedt,Kombibad,Schwimmer,Kombibad|Schwimmer,indoor,synthetic_rule_kombibad,128.0,343.04,48.0,128.64,estimated_length_x_std_width,estimated_class_default,derived_length_area,H064,1.0,,,ok,T6,T6
+16420,65,Freibad Lägerdorf,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,1250.0,2593.75,150.0,311.25,estimated_length_x_std_width,estimated_class_default,derived_length_area,,1.0,,,ok,T6,T6
+16421,65,Freibad Lägerdorf,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,341.25,73.01,76.66,estimated_class_default,measured,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+16422,65,Freibad Lägerdorf,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+19772,66,Fortuna-Bad,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,312.5,640.625,75.0,153.75,measured_area,measured,measured_length_width,,1.0,,,ok,T6,T6
+19836,66,Fortuna-Bad,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,300.625,73.01,67.53,estimated_class_default,measured,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+19837,66,Fortuna-Bad,Freibad,Sprung/Tauch,Freibad|Sprung/Tauch,outdoor,badtyp_rule,144.0,460.8,48.09,153.89,estimated_class_default,measured,estimated_aspect_ratio,,0.65,,,ok,T6,T6
+19838,66,Fortuna-Bad,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,14.4,34.64,6.93,estimated_class_default,measured,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+16412,67,Freibad Horst,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+16413,67,Freibad Horst,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+16407,68,H2O Horst,Hallenbad,Kurs/Lehr,Hallenbad|Kurs/Lehr,indoor,badtyp_rule,160.0,164.0,51.28,52.56,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H068,0.65,,,ok,T6,T6
+2818,69,Schwimmzentrum Itzehoe,Kombibad,Schwimmer,Kombibad|Schwimmer,indoor,synthetic_rule_kombibad,500.0,1450.0,90.0,261.0,measured_area,measured,measured_length_width,H069,1.0,,,ok,T6,T6
+2819,69,Schwimmzentrum Itzehoe,Kombibad,Nichtschwimmer,Kombibad|Nichtschwimmer,indoor,synthetic_rule_kombibad,125.0,100.0,45.0,36.0,measured_area,measured,measured_length_width,H069,1.0,,,ok,T6,T6
+6537,70,Freibad Krempe,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,312.5,648.4375,75.0,155.62,estimated_length_x_std_width,estimated_class_default,derived_length_area,,1.0,,,ok,T6,T6
+6538,70,Freibad Krempe,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,400.0,400.0,80.99,80.99,measured_area,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+6539,70,Freibad Krempe,Freibad,Sprung/Tauch,Freibad|Sprung/Tauch,outdoor,badtyp_rule,144.0,460.8,48.09,153.89,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,0.65,,,ok,T6,T6
+19841,70,Freibad Krempe,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+16418,71,Freibad Wacken,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+16419,71,Freibad Wacken,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,1250.0,2593.75,150.0,311.25,estimated_length_x_std_width,estimated_class_default,derived_length_area,,1.0,,,ok,T6,T6
+16372,72,Grund- und Gesamtschule Schenefeld,Schulbad,Schwimmer,Schulbad|Schwimmer,indoor,baederleben_location,100.0,120.0,42.43,50.92,estimated_class_default,synthetic_plausible,estimated_aspect_ratio,H072,1.0,,,ok,T6,T6
+16415,73,Freibad an Diek,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+16416,73,Freibad an Diek,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,325.0,73.01,73.01,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+16417,73,Freibad an Diek,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+8881,74,Hallenbad Wilster,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,346.5,866.25,78.97,197.42,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H074,1.0,,,ok,T6,T6
+8882,74,Hallenbad Wilster,Hallenbad,Nichtschwimmer,Hallenbad|Nichtschwimmer,indoor,badtyp_rule,133.28,126.616,46.75,44.41,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H074,1.0,,,ok,T6,T6
+8251,75,Freibad Quarnstedt,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+19777,76,Freibad Kellinghusen,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,325.0,73.01,73.01,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+19778,76,Freibad Kellinghusen,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+19779,76,Freibad Kellinghusen,Freibad,Sprung/Tauch,Freibad|Sprung/Tauch,outdoor,badtyp_rule,144.0,460.8,48.09,153.89,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,0.65,,,ok,T6,T6
+20456,77,Freibad Brokstedt,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+19523,78,Schwimmbad Grundschule Hohenlockstedt,Schulbad,Schwimmer,Schulbad|Schwimmer,indoor,baederleben_location,100.0,120.0,42.43,50.92,estimated_class_default,synthetic_plausible,estimated_aspect_ratio,H078,1.0,,,ok,T6,T6
+5309,79,Badlantic Freizeitbad Ahrensburg,Kombibad,Schwimmer,Kombibad|Schwimmer,indoor,synthetic_rule_kombibad,750.0,2010.0,116.19,311.39,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H079,1.0,,,ok,T6,T6
+5310,79,Badlantic Freizeitbad Ahrensburg,Kombibad,Wellen/Natur,Kombibad|Wellen/Natur,indoor,synthetic_rule_kombibad,600.0,600.0,101.19,101.19,synthetic_plausible,synthetic_plausible,estimated_aspect_ratio,H079,1.75,,,ok,T6,T6
+5311,79,Badlantic Freizeitbad Ahrensburg,Kombibad,Kleinkind,Kombibad|Kleinkind,indoor,synthetic_rule_kombibad,53.0,14.575,29.72,8.17,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H079,1.0,,,ok,T6,T6
+5312,79,Badlantic Freizeitbad Ahrensburg,Kombibad,Warm/Sprudel/Tret,Kombibad|Warm/Sprudel/Tret,indoor,synthetic_rule_kombibad,12.0,10.8,14.31,12.88,synthetic_plausible,synthetic_plausible,estimated_aspect_ratio,H079,0.65,,,ok,T6,T6
+11844,80,Woldenhorn Schule,Schulbad,Schwimmer,Schulbad|Schwimmer,indoor,baederleben_location,100.0,120.0,42.43,50.92,estimated_class_default,synthetic_plausible,estimated_aspect_ratio,H080,1.0,,,ok,T6,T6
+11845,80,Woldenhorn Schule,Schulbad,Kleinkind,Schulbad|Kleinkind,indoor,baederleben_location,53.0,14.575,29.72,8.17,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H080,1.0,,,ok,T6,T6
+11846,81,Travebad,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,417.5,1169.0,83.4,233.52,measured_area,measured,measured_length_width,H081,1.0,,,ok,T6,T6
+11847,81,Travebad,Hallenbad,Kurs/Lehr,Hallenbad|Kurs/Lehr,indoor,badtyp_rule,80.0,82.0,36.0,36.9,measured_length_x_width,measured,measured_length_width,H081,0.65,,,ok,T6,T6
+11848,81,Travebad,Hallenbad,Kurs/Lehr,Hallenbad|Kurs/Lehr,indoor,badtyp_rule,160.0,164.0,51.28,52.56,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H081,0.65,,,ok,T6,T6
+11849,81,Travebad,Hallenbad,Kleinkind,Hallenbad|Kleinkind,indoor,badtyp_rule,42.32,11.638,26.56,7.3,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H081,1.0,,,ok,T6,T6
+11850,82,Freibad Bargteheide,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,1100.0,2282.5,144.0,298.8,measured_length_x_width,estimated_class_default,measured_length_width,,1.0,,,ok,T6,T6
+19893,82,Freibad Bargteheide,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,748.0,748.0,112.0,112.0,measured_area,estimated_class_default,measured_length_width,,1.0,,,ok,T6,T6
+19894,82,Freibad Bargteheide,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+11843,83,Schwimmhalle Barsbüttel,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,baederleben_location,312.5,718.75,75.0,172.5,measured_area,measured,measured_length_width,H083,1.0,,,ok,T6,T6
+11851,83,Schwimmhalle Barsbüttel,Hallenbad,Kleinkind,Hallenbad|Kleinkind,indoor,badtyp_rule,42.32,11.638,26.56,7.3,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H083,1.0,,,ok,T6,T6
+20445,84,Grundschule Tannenweg,Schulbad,Schwimmer,Schulbad|Schwimmer,indoor,badtyp_rule,100.0,120.0,42.43,50.92,estimated_class_default,synthetic_plausible,estimated_aspect_ratio,H084,1.0,,,ok,T6,T6
+11852,85,Schönaubad,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,1250.0,2593.75,150.0,311.25,estimated_length_x_std_width,estimated_class_default,derived_length_area,,1.0,,,ok,T6,T6
+11853,85,Schönaubad,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,325.0,73.01,73.01,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+11854,85,Schönaubad,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+16404,86,Steinburgschule,Schulbad,Kurs/Lehr,Schulbad|Kurs/Lehr,indoor,baederleben_location,160.0,182.4,51.28,58.46,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H086,0.65,,,ok,T6,T6
+20261,87,Quellenbad Bunsoh,Freibad,Wellen/Natur,Freibad|Wellen/Natur,outdoor,badtyp_rule,600.0,840.0,101.19,141.67,synthetic_plausible,synthetic_plausible,estimated_aspect_ratio,,0.5,,,ok,T5,T5
+5313,88,Freizeitbad Albersdorf,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,325.0,73.01,73.01,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+5314,88,Freizeitbad Albersdorf,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+5315,88,Freizeitbad Albersdorf,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+15616,89,Waldschwimmbad Nordhastedt,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+15617,89,Waldschwimmbad Nordhastedt,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+2801,90,Freibad Hemmingstedt,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,312.5,648.4375,75.0,155.62,estimated_length_x_std_width,estimated_class_default,derived_length_area,,1.0,,,ok,T5,T5
+19762,91,Freibad Dellstedt,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+19763,91,Freibad Dellstedt,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,325.0,73.01,73.01,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+15618,92,Freibad Pahlen,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+15619,92,Freibad Pahlen,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+8890,93,Freibad Wrohm,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+2802,94,Schwimmbad Hennstedt,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,1250.0,2593.75,150.0,311.25,estimated_length_x_std_width,estimated_class_default,derived_length_area,,1.0,,,ok,T5,T5
+7726,95,Freibad Lunden,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+15620,96,Schwimmhalle Marne,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,312.5,781.25,75.0,187.5,measured_area,estimated_class_default,measured_length_width,H096,1.0,,,ok,T5,T5
+15621,96,Schwimmhalle Marne,Hallenbad,Nichtschwimmer,Hallenbad|Nichtschwimmer,indoor,badtyp_rule,133.28,126.616,46.75,44.41,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H096,1.0,,,ok,T5,T5
+15611,97,Waldschwimmbad Brug,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+15612,97,Waldschwimmbad Brug,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+15613,97,Waldschwimmbad Brug,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,325.0,73.01,73.01,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+2553,98,Dithmarscher Wasserwelt,Kombibad,Schwimmer,Kombibad|Schwimmer,outdoor,synthetic_rule_kombibad,1250.0,3350.0,150.0,402.0,estimated_length_x_std_width,estimated_class_default,derived_length_area,,1.0,,,ok,T5,T5
+19992,98,Dithmarscher Wasserwelt,Kombibad,Nichtschwimmer,Kombibad|Nichtschwimmer,outdoor,synthetic_rule_kombibad,125.0,118.75,45.28,43.02,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+19993,98,Dithmarscher Wasserwelt,Kombibad,Kleinkind,Kombibad|Kleinkind,outdoor,synthetic_rule_kombibad,53.0,14.575,29.72,8.17,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+19994,98,Dithmarscher Wasserwelt,Kombibad,Nichtschwimmer,Kombibad|Nichtschwimmer,indoor,synthetic_rule_kombibad,125.0,118.75,45.28,43.02,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H098,1.0,,,ok,T5,T5
+20243,99,Freibad Ulitzhörn,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,325.0,113.0,113.0,estimated_class_default,estimated_class_default,derived_length_area,,1.0,,,ok,T5,T5
+20247,99,Freibad Ulitzhörn,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+7705,100,Freibad Schlutup,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,400.0,1050.0,82.0,215.25,measured_area,measured,measured_length_width,,1.0,,,ok,T6,T6
+7706,100,Freibad Schlutup,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,320.0,320.0,72.0,72.0,measured_length_x_width,measured,measured_length_width,,1.0,,,ok,T6,T6
+7708,100,Freibad Schlutup,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+7714,101,Freibad Moisling,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,375.0,609.375,80.0,130.0,measured_length_x_width,measured,measured_length_width,,1.0,,,ok,T6,T6
+7715,101,Freibad Moisling,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,374.0,364.65,78.0,76.05,measured_length_x_width,measured,measured_length_width,,1.0,,,ok,T6,T6
+7698,102,Schwimmbad Kücknitz,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,346.5,866.25,78.97,197.42,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H102,1.0,,,ok,T6,T6
+7718,103,Zentralbad Lübeck,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,375.0,1200.0,80.0,256.0,measured_area,measured,measured_length_width,H103,1.0,,,ok,T6,T6
+7719,103,Zentralbad Lübeck,Hallenbad,Nichtschwimmer,Hallenbad|Nichtschwimmer,indoor,badtyp_rule,124.95,118.7025,46.66,44.33,measured_length_x_width,measured,measured_length_width,H103,1.0,,,ok,T6,T6
+7720,104,Sportbad St. Lorenz,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,baederleben_location,1050.0,2940.0,142.0,397.6,measured_length_x_width,measured,measured_length_width,H104,1.0,,,ok,T6,T6
+7721,104,Sportbad St. Lorenz,Hallenbad,Nichtschwimmer,Hallenbad|Nichtschwimmer,indoor,badtyp_rule,133.28,123.284,49.32,45.62,measured_length_x_width,measured,measured_length_width,H104,1.0,,,ok,T6,T6
+6398,105,Schwimmbad Max-Planck Schule,Schulbad,Schwimmer,Schulbad|Schwimmer,indoor,baederleben_location,100.0,120.0,42.43,50.92,estimated_class_default,synthetic_plausible,estimated_aspect_ratio,H105,1.0,,,ok,T6,T6
+3019,106,Eiderbad Hammer,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,450.0,933.75,90.0,186.75,measured_area,estimated_class_default,measured_length_width,,1.0,,,ok,T6,T6
+6391,107,Sommerbad Katzheide,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,312.5,648.4375,75.0,155.62,estimated_length_x_std_width,estimated_class_default,derived_length_area,,1.0,,,ok,T6,T6
+3017,108,Schwimmhalle Schilksee,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,312.5,968.75,75.0,232.5,estimated_length_x_std_width,measured,derived_length_area,H108,1.0,,,ok,T6,T6
+14408,109,Hörnbad,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,199.92,499.8,57.32,143.3,measured_area,estimated_class_default,measured_length_width,H109,1.0,,,ok,T6,T6
+14409,109,Hörnbad,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,1102.74,2756.85,144.11,360.28,measured_area,estimated_class_default,derived_length_area,H109,1.0,,,ok,T6,T6
+14410,109,Hörnbad,Hallenbad,Kurs/Lehr,Hallenbad|Kurs/Lehr,indoor,badtyp_rule,160.0,164.0,51.28,52.56,measured_area,estimated_class_default,estimated_aspect_ratio,H109,0.65,,,ok,T6,T6
+14411,109,Hörnbad,Hallenbad,Kleinkind,Hallenbad|Kleinkind,indoor,badtyp_rule,42.32,11.638,26.56,7.3,measured_area,estimated_class_default,estimated_aspect_ratio,H109,1.0,,,ok,T6,T6
+14412,109,Hörnbad,Hallenbad,Nichtschwimmer,Hallenbad|Nichtschwimmer,indoor,badtyp_rule,2.3,2.185,6.14,5.83,measured_area,estimated_class_default,estimated_aspect_ratio,H109,1.0,,,ok,T6,T6
+14413,109,Hörnbad,Hallenbad,Warm/Sprudel/Tret,Hallenbad|Warm/Sprudel/Tret,indoor,badtyp_rule,4.5,4.05,8.76,7.88,measured_area,synthetic_plausible,estimated_aspect_ratio,H109,0.65,,,ok,T6,T6
+2476,110,Campusbad Flensburg,Kombibad,Schwimmer,Kombibad|Schwimmer,indoor,override,1000.0,2680.0,140.0,375.2,site_plan_length_x_lanes,measured,site_plan_length_width,H110,1.0,,,ok,T6,T6
+6364,110,Campusbad Flensburg,Kombibad,Schwimmer,Kombibad|Schwimmer,outdoor,override,86.0,230.48,39.34,105.44,site_plan_pixel_scaled,estimated_class_default,estimated_aspect_ratio,H110,1.0,,,ok,T6,T6
+6366,110,Campusbad Flensburg,Kombibad,Kleinkind,Kombibad|Kleinkind,indoor,override,29.0,5.075,22.85,4.0,site_plan_pixel_scaled,site_plan_legend_min_max,estimated_aspect_ratio,H110,1.0,,,ok,T6,T6
+6367,110,Campusbad Flensburg,Kombibad,Kurs/Lehr,Kombibad|Kurs/Lehr,indoor,override,174.0,198.36,55.96,63.8,site_plan_pixel_scaled,estimated_class_default,estimated_aspect_ratio,H110,0.65,,,ok,T6,T6
+6368,110,Campusbad Flensburg,Kombibad,Warm/Sprudel/Tret,Kombibad|Warm/Sprudel/Tret,indoor,synthetic_rule_kombibad,12.0,10.8,14.31,12.88,synthetic_plausible,synthetic_plausible,estimated_aspect_ratio,H110,0.65,,,ok,T6,T6
+6369,110,Campusbad Flensburg,Kombibad,Schwimmer,Kombibad|Schwimmer,indoor,override,117.0,313.56,45.89,122.99,site_plan_pixel_scaled,estimated_class_default,estimated_aspect_ratio,H110,1.0,,,ok,T6,T6
+6370,110,Campusbad Flensburg,Kombibad,Schwimmer,Kombibad|Schwimmer,outdoor,override,77.0,206.36,37.23,99.77,site_plan_pixel_scaled,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+2475,111,Freibad Weiche,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,207.03,429.58725,63.7,132.18,measured_area,estimated_class_default,measured_length_width,,1.0,,,ok,T6,T6
+8114,112,Hallenbad Niebüll,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,346.5,866.25,78.97,197.42,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H112,1.0,,,ok,T5,T5
+8115,112,Hallenbad Niebüll,Hallenbad,Nichtschwimmer,Hallenbad|Nichtschwimmer,indoor,badtyp_rule,133.28,126.616,46.75,44.41,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H112,1.0,,,ok,T5,T5
+16183,113,Freibad Neukirchen,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+16184,113,Freibad Neukirchen,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+6431,114,Freibad Klixbüll,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+6432,114,Freibad Klixbüll,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,325.0,73.01,73.01,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+19761,115,Freibad Dagebüll,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,325.0,73.01,73.01,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+8550,116,Freibad Tönning,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,1250.0,2000.0,150.0,240.0,measured_length_x_width,measured,measured_length_width,,1.0,,,ok,T5,T5
+8551,116,Freibad Tönning,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,325.0,73.01,73.01,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+8552,116,Freibad Tönning,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,measured,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+19774,117,Freibad Högel,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+19775,117,Freibad Högel,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,325.0,73.01,73.01,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+19629,118,Schwimmbad Drelsdorf,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+12193,119,Freibad Breklum,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,312.5,648.4375,75.0,155.62,estimated_length_x_std_width,estimated_class_default,derived_length_area,,1.0,,,ok,T5,T5
+12194,119,Freibad Breklum,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,325.0,73.01,73.01,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+12195,119,Freibad Breklum,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+16181,120,Grundschule Bredstedt,Schulbad,Kurs/Lehr,Schulbad|Kurs/Lehr,indoor,baederleben_location,160.0,182.4,51.28,58.46,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H120,0.65,,,ok,T5,T5
+16188,121,Erlebnisfreibad Bredstedt,Freibad,Sprung/Tauch,Freibad|Sprung/Tauch,outdoor,badtyp_rule,144.0,460.8,48.09,153.89,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,0.65,,,ok,T5,T5
+16189,121,Erlebnisfreibad Bredstedt,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+16190,121,Erlebnisfreibad Bredstedt,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+16193,122,Freibad Bordelum,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+16194,122,Freibad Bordelum,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+8783,123,Freibad Viöl,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+8784,123,Freibad Viöl,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,325.0,73.01,73.01,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+8130,124,Schwimmbad Ohrstedt,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+8125,125,Freibad Nostedt,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+19773,126,Freibad Haselund,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+2817,127,Hallenbad Husum,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,312.5,781.25,75.0,187.5,estimated_length_x_std_width,measured,derived_length_area,H127,1.0,,,ok,T5,T5
+19956,127,Hallenbad Husum,Hallenbad,Nichtschwimmer,Hallenbad|Nichtschwimmer,indoor,badtyp_rule,133.28,126.616,46.75,44.41,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H127,1.0,,,ok,T5,T5
+19957,127,Hallenbad Husum,Hallenbad,Kleinkind,Hallenbad|Kleinkind,indoor,badtyp_rule,42.32,11.638,26.56,7.3,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H127,1.0,,,ok,T5,T5
+8500,128,Freibad Steinhorst,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,15.0,3.75,16.0,4.0,measured_length_x_width,estimated_class_default,measured_length_width,,1.0,,,ok,T6,T6
+8501,128,Freibad Steinhorst,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+19986,129,Gemeinschaftsschule Wentorf,Schulbad,Schwimmer,Schulbad|Schwimmer,indoor,baederleben_location,100.0,120.0,41.0,49.2,measured_area,synthetic_plausible,measured_length_width,H129,1.0,,,ok,T6,T6
+8287,130,Aqua Siwa Ratzeburg,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,416.75,979.3625,83.34,195.85,measured_area,measured,measured_length_width,H130,1.0,,,ok,T6,T6
+8288,130,Aqua Siwa Ratzeburg,Hallenbad,Kleinkind,Hallenbad|Kleinkind,indoor,badtyp_rule,42.32,11.638,26.56,7.3,estimated_class_default,estimated_class_default,estimated_aspect_ratio,H130,1.0,,,ok,T6,T6
+14495,131,Augustinum Mölln,Hallenbad,Schwimmer,Hallenbad|Schwimmer,indoor,badtyp_rule,312.5,781.25,75.0,187.5,measured_area,estimated_class_default,measured_length_width,H131,1.0,,,ok,T6,T6
+11873,132,Freibad Lauenburg,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,1250.0,2593.75,150.0,311.25,estimated_length_x_std_width,estimated_class_default,derived_length_area,,1.0,,,ok,T6,T6
+11874,132,Freibad Lauenburg,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,325.0,73.01,73.01,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+11875,132,Freibad Lauenburg,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T6,T6
+2497,133,Freizeitbad Geesthacht,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,baederleben_location,1225.0,3583.125,149.0,435.82,measured_area,measured,measured_length_width,,1.0,,,ok,T6,T6
+20093,133,Freizeitbad Geesthacht,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,baederleben_location,450.0,423.0,86.0,80.84,measured_length_x_width,measured,measured_length_width,,1.0,,,ok,T6,T6
+20094,133,Freizeitbad Geesthacht,Freibad,Kurs/Lehr,Freibad|Kurs/Lehr,outdoor,baederleben_location,450.0,564.75,86.0,107.93,measured_area,measured,measured_length_width,,0.65,,,ok,T6,T6
+20095,133,Freizeitbad Geesthacht,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,baederleben_location,150.0,24.0,50.0,8.0,measured_length_x_width,measured,measured_length_width,,1.0,,,ok,T6,T6
+8868,134,Freibad Wesselburen,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,84.0,174.3,measured_length_x_width,estimated_class_default,measured_length_width,,1.0,,,ok,T5,T5
+8869,134,Freibad Wesselburen,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,325.0,76.0,76.0,measured_length_x_width,estimated_class_default,measured_length_width,,1.0,,,ok,T5,T5
+8870,134,Freibad Wesselburen,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+8353,135,Schwimmbad Schafstedt,Freibad,Schwimmer,Freibad|Schwimmer,outdoor,badtyp_rule,425.0,881.875,87.46,181.48,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+8354,135,Schwimmbad Schafstedt,Freibad,Nichtschwimmer,Freibad|Nichtschwimmer,outdoor,badtyp_rule,325.0,325.0,73.01,73.01,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+8355,135,Schwimmbad Schafstedt,Freibad,Kleinkind,Freibad|Kleinkind,outdoor,badtyp_rule,72.0,18.0,34.64,8.66,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+8079,136,Hallen- und Freibad Meldorf,Kombibad,Nichtschwimmer,Kombibad|Nichtschwimmer,outdoor,synthetic_rule_kombibad,125.0,118.75,45.28,43.02,estimated_class_default,estimated_class_default,estimated_aspect_ratio,,1.0,,,ok,T5,T5
+8080,136,Hallen- und Freibad Meldorf,Kombibad,Schwimmer,Kombibad|Schwimmer,indoor,synthetic_rule_kombibad,312.5,837.5,75.0,201.0,estimated_length_x_std_width,estimated_class_default,derived_length_area,H136,1.0,,,ok,T5,T5
+8081,136,Hallen- und Freibad Meldorf,Kombibad,Schwimmer,Kombibad|Schwimmer,outdoor,synthetic_rule_kombibad,1250.0,3350.0,150.0,402.0,estimated_length_x_std_width,estimated_class_default,derived_length_area,,1.0,,,ok,T5,T5

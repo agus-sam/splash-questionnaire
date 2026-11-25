@@ -1,0 +1,21 @@
+parameter,value,unit,source,note
+sigma,5.67e-08,W/(m2 K4),Buscemi handbook B14,
+eps_water,0.95,-,Buscemi p.6,
+F_sky,1,-,Buscemi p.6,
+A_max,4.5,m2/person,Buscemi B12,
+z_B6,0.5,m,"Buscemi p.10,13",weakly validated
+z_ref,10,m,PVGIS WS10m,
+B6_c0,0.28,-,Buscemi B6 (Inan & Atayilmaz),dP in Pa
+B6_c1,0.784,-,Buscemi B6,
+B6_exp,0.695,-,Buscemi B6,
+bowen_const,0.622,-,Buscemi B19,
+B17_a,-0.4373,-,Buscemi B17,
+B17_b,0.0037,-,Buscemi B17,
+B17_c,0.0027,-,Buscemi B17,
+F_re,0.03,1/day,synthetic_assumption,Athens case; paper range 0.025-0.05
+alpha_w_mode,constant,-,synthetic_assumption,paper: constant 0.85-0.86 fitted best in the Spanish validation
+alpha_w_const,0.855,-,synthetic_assumption,paper range 0.85-0.86
+cloud_mode,S9_ctot_only,-,synthetic_assumption,C = 0.784 c_tot from weather_hourly.cloud_total; alternative: IR(h) bypass
+cloud_C_const,0.55,-,synthetic_assumption,fallback if cloud_total is missing
+ro,0.7,-,synthetic_assumption,"Athens calibration, not calibrated for Schleswig-Holstein"
+d_m,0.474,m,synthetic_assumption,"Athens calibration at z = 0.5 m, not calibrated for Schleswig-Holstein"

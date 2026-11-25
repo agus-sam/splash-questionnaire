@@ -1,0 +1,101 @@
+run:
+  run_id: auto
+  output_dir: results
+  time_window: {start: null, end: null}
+  log_level: INFO
+
+data:
+  root: data
+
+physics:
+  outdoor: {}
+  indoor: {}
+  occupancy_scale: 1.0
+
+hall_air:
+  air_temp_c: null
+  rh_pct: null
+  wall_mode: follow_air_offset
+  hall_volume_m3_per_m2_water: 12.0
+
+system:
+  heat_pump:
+    carnot_fraction: 0.35
+    sink_offset_k: 10.0
+    source: outdoor_air
+    source_temp_c: 10.0
+    source_offset_k: -5.0
+    cop_min: 1.5
+    cop_max: 4.5
+    aux_el_frac_of_heat: 0.0
+  air_side:
+    heater: heat_pump
+    sink_c: 40.0
+    cop_min: 1.5
+    cop_max: 4.0
+  p2h_efficiency: 1.0
+  band_shift_k: 0.0
+  band_width_k: null
+
+curtailment:
+  access_share: null
+
+solver: {name: highs, time_limit_s: 900, verbose: false}
+
+economics:
+  co2_price_eur_per_t: 65.0
+  include_co2_cost: true
+  grid_price_eur_per_mwh: null
+  curtailed_price_eur_per_mwh: null
+  price_overrides: {}
+  reference_source: facility_mix
+  capex_overrides: {}
+  investment:
+    discount_rate: 0.05
+    capex_subsidy_pct: 0.0
+
+output:
+  figures: true
+  dpi: 150
+
+facility:
+  technologies: [heat_pump]
+  zone_modes: [hysteresis_addon, hysteresis_replace, hysteresis_optimised]
+  facilities: null
+  reference_facility: Campusbad Flensburg
+  sample_facilities: null
+  exclude_temporarily_closed: false
+  charge_depth: 1.0
+  hold_margin_k: 0.0
+  indoor_evaporation: ashrae
+  plant:
+    configuration: dual_temperature_circuit
+    availability: always
+    preheat_hours: 0
+    shortage_priority: hall
+  sizing:
+    percentile: 100.0
+    design_basin_temp: t_min
+    primary_scenario: HP100
+    scenarios: [HP100]
+  hvac:
+    fan_sfp_kw_per_m3_s: null
+  economics:
+    include_controller: true
+  dhw:
+    enabled: false
+    shower_water_m3_per_visitor: 0.05
+    t_mix_c: 40.0
+    stay_in_water_h: 1.0
+    loss_share: 0.0
+    hot_shower_share: 1.0
+    sink_c: 60.0
+    include_in_sizing: true
+    sizing_smooth_h: 1
+  optimised_sizing:
+    min_size_factor: 0.0
+    max_size_factor: 3.0
+    tail_h: auto
+    max_tail_h: 168
+    allow_zero: true
+    time_limit_s: null

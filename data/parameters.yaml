@@ -1,0 +1,520 @@
+# SPLASH Questionnaire and Simulation: versioned parameter file
+#
+# Every number the calculation uses lives here, with unit, source and status.
+# Entries with `pessimistic` / `central` / `optimistic` are the uncertain ones.
+# "Pessimistic" and "optimistic" always refer to the effect on the operator's
+# NPV (pessimistic = worse for the investment case), not to the size of the number.
+#
+# status:
+#   sourced      value taken from a named source (see `source`)
+#   project      value fixed by the SPLASH project team
+#   illustrative value so that the app runs; must be replaced or signed off before publication of results
+#
+# While meta.status is "draft_unvalidated" the app shows a visible banner.
+
+meta:
+  version: "0.2.0-draft"
+  status: draft_unvalidated
+  date: "2026-11-23"
+  description_en: "Draft parameter set. Illustrative entries must be replaced by values from the SPLASH technology and economics data before the survey goes out."
+  description_de: "Entwurf des Parametersatzes. Illustrative Einträge müssen vor Start der Befragung durch Werte aus den SPLASH-Technologie- und Wirtschaftsdaten ersetzt werden."
+
+parameters:
+  # ------------------------------------------------------------------ finance
+  lifetime_years:
+    label_en: "Evaluation period"
+    label_de: "Betrachtungszeitraum"
+    unit: "a"
+    value: 20
+    status: illustrative
+    source: "Illustrative value. Typical heat pump life is 15 to 20 years, to be confirmed."
+  wacc:
+    label_en: "Nominal discount rate (WACC)"
+    label_de: "Nominaler Kalkulationszins (WACC)"
+    unit: "1/a"
+    pessimistic: 0.09
+    central: 0.07
+    optimistic: 0.05
+    status: illustrative
+    source: "Typical German range for municipal and commercial heating investments (5 to 9 % nominal). To be confirmed by the SPLASH team."
+  inflation:
+    label_en: "General inflation"
+    label_de: "Allgemeine Inflation"
+    unit: "1/a"
+    pessimistic: 0.015
+    central: 0.02
+    optimistic: 0.025
+    status: sourced
+    source: "ECB medium-term target 2 %. Destatis: 2.2 % in 2025, about 2.8 % in October 2026 (energy driven)."
+  price_escalation_fuel:
+    label_en: "Annual real price change, heat fuels (above inflation)"
+    label_de: "Jährliche reale Preisänderung Wärmeträger (über Inflation)"
+    unit: "1/a"
+    pessimistic: 0.0
+    central: 0.02
+    optimistic: 0.04
+    status: illustrative
+    source: "Illustrative value. Could follow the UBA projections framework data 2025."
+  price_escalation_electricity:
+    label_en: "Annual real price change, electricity (above inflation)"
+    label_de: "Jährliche reale Preisänderung Strom (über Inflation)"
+    unit: "1/a"
+    pessimistic: 0.03
+    central: 0.01
+    optimistic: 0.0
+    status: illustrative
+    source: "Illustrative value. Could follow the UBA projections framework data 2025."
+
+  # ------------------------------------------------------------------- prices
+  price_gas:
+    label_en: "Natural gas price (net, incl. CO2 cost)"
+    label_de: "Erdgaspreis (netto, inkl. CO2-Kosten)"
+    unit: "EUR/kWh"
+    pessimistic: 0.065
+    central: 0.085
+    optimistic: 0.105
+    status: illustrative
+    source: "Illustrative value. Replaced by the operator's own price when given."
+  price_oil:
+    label_en: "Heating oil price (net)"
+    label_de: "Heizölpreis (netto)"
+    unit: "EUR/kWh"
+    pessimistic: 0.09
+    central: 0.11
+    optimistic: 0.13
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  price_district_heat:
+    label_en: "District heat price (net)"
+    label_de: "Fernwärmepreis (netto)"
+    unit: "EUR/kWh"
+    pessimistic: 0.09
+    central: 0.11
+    optimistic: 0.13
+    status: illustrative
+    source: "Illustrative value. District heat tariffs are operator specific."
+  price_other_heat:
+    label_en: "Other heat source price (net)"
+    label_de: "Preis sonstige Wärmequelle (netto)"
+    unit: "EUR/kWh"
+    value: 0.10
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  price_electricity:
+    label_en: "Electricity price for the heat pump or heater (net)"
+    label_de: "Strompreis für Wärmepumpe oder Heizstab (netto)"
+    unit: "EUR/kWh"
+    pessimistic: 0.27
+    central: 0.22
+    optimistic: 0.18
+    status: illustrative
+    source: "Illustrative value. Replaced by the operator's own price when given."
+  vat_rate:
+    label_en: "VAT rate"
+    label_de: "Umsatzsteuersatz"
+    unit: "1"
+    value: 0.19
+    status: sourced
+    source: "German VAT standard rate."
+  vat_deductible_by_legal_form:
+    label_en: "Operator can deduct input VAT"
+    label_de: "Betreiber kann Vorsteuer abziehen"
+    unit: "-"
+    value:
+      municipal_operation: false
+      municipal_company: true
+      association: false
+      private: true
+      other: false
+    status: illustrative
+    source: "Illustrative value. Depends on the individual tax status; to be checked."
+
+  # --------------------------------------------------- unit conversion, boilers
+  gas_kwh_per_m3:
+    label_en: "Gas: kWh per m3 (billing value)"
+    label_de: "Gas: kWh je m3 (Abrechnungswert)"
+    unit: "kWh/m3"
+    value: 10.5
+    status: illustrative
+    source: "Illustrative value. The invoice states the exact value (Brennwert x Zustandszahl)."
+  oil_kwh_per_l:
+    label_en: "Heating oil: kWh per litre"
+    label_de: "Heizöl: kWh je Liter"
+    unit: "kWh/l"
+    value: 10.0
+    status: illustrative
+    source: "Illustrative value. Common reference value for light heating oil."
+  eta_boiler_gas:
+    label_en: "Boiler efficiency, gas"
+    label_de: "Kesselwirkungsgrad Gas"
+    unit: "1"
+    value: 0.90
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  eta_boiler_oil:
+    label_en: "Boiler efficiency, oil"
+    label_de: "Kesselwirkungsgrad Öl"
+    unit: "1"
+    value: 0.88
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  eta_district_heat:
+    label_en: "Transfer efficiency, district heat"
+    label_de: "Übergabewirkungsgrad Fernwärme"
+    unit: "1"
+    value: 0.97
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  eta_other_heat:
+    label_en: "Efficiency, other heat source"
+    label_de: "Wirkungsgrad sonstige Wärmequelle"
+    unit: "1"
+    value: 0.85
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  old_boiler_age_years:
+    label_en: "Boiler age above which an efficiency penalty applies"
+    label_de: "Kesselalter, ab dem ein Wirkungsgradabschlag gilt"
+    unit: "a"
+    value: 20
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  old_boiler_eta_delta:
+    label_en: "Efficiency change for old boilers"
+    label_de: "Wirkungsgradänderung alte Kessel"
+    unit: "1"
+    value: -0.04
+    status: illustrative
+    source: "Illustrative value, no source yet."
+
+  # ------------------------------------------------------------- benchmarks
+  bench_heat_kwh_per_m2:
+    label_en: "Heat use per m2 water surface and year, municipal indoor and combined pools (n = 67)"
+    label_de: "Wärmeverbrauch je m2 Wasserfläche und Jahr, kommunale Hallen- und Kombibäder (n = 67)"
+    unit: "kWh/(m2 a)"
+    value:
+      median: 2013.60
+      mean: 2243.68
+      min: 513.04
+      max: 5057.61
+    status: sourced
+    source: "UBA Texte 139/2024, Table 2 (heated basins). https://umweltbundesamt.de/sites/default/files/medien/11850/publikationen/139_2024_energieverbrauch_schwimmbaeder.pdf"
+  bench_elec_kwh_per_m2:
+    label_en: "Electricity use per m2 water surface and year, municipal indoor and combined pools (n = 67)"
+    label_de: "Stromverbrauch je m2 Wasserfläche und Jahr, kommunale Hallen- und Kombibäder (n = 67)"
+    unit: "kWh/(m2 a)"
+    value:
+      median: 631.23
+      min: 185.46
+      max: 1927.34
+    status: sourced
+    source: "UBA Texte 139/2024, Table 2 (heated basins)."
+
+  # --------------------------------------------- defaults for missing answers
+  default_hall_area_factor:
+    label_en: "Hall floor area per m2 of water surface (used when not given)"
+    label_de: "Hallenfläche je m2 Wasserfläche (wenn nicht angegeben)"
+    unit: "m2/m2"
+    value: 3.0
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  default_operating_weeks:
+    label_en: "Operating weeks per year (used when not given)"
+    label_de: "Betriebswochen je Jahr (wenn nicht angegeben)"
+    unit: "weeks"
+    value: 50
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  default_hours_per_week:
+    label_en: "Opening hours per week (used when not given)"
+    label_de: "Öffnungsstunden je Woche (wenn nicht angegeben)"
+    unit: "h"
+    value: 70
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  default_air_setpoint_c:
+    label_en: "Hall air setpoint (used when not given)"
+    label_de: "Hallenlufttemperatur (wenn nicht angegeben)"
+    unit: "degC"
+    value: 29.0
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  basin_defaults:
+    label_en: "Default water temperature by basin type (used when not given)"
+    label_de: "Standard-Wassertemperatur je Beckentyp (wenn nicht angegeben)"
+    unit: "degC"
+    value:
+      lap: 27.0
+      teaching: 29.0
+      therapy: 32.0
+      children: 31.0
+      leisure: 30.0
+      diving: 28.0
+      outdoor: 24.0
+    status: illustrative
+    source: "Illustrative value. SPLASH holds the temperature band by pool type."
+
+  # ----------------------------------------------- heat demand split and shape
+  # ------------------------------------------------------------- heat pump
+  sink_temps_c:
+    label_en: "Heat pump supply temperature by use"
+    label_de: "Vorlauftemperatur der Wärmepumpe je Nutzung"
+    unit: "degC"
+    value:
+      pool_water: 38.0
+      hall_air: 45.0
+      space_heating: 45.0
+      dhw: 60.0
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  hp_levels_default:
+    label_en: "Uses served by the heat pump (the boiler keeps the rest)"
+    label_de: "Von der Wärmepumpe versorgte Nutzungen (den Rest deckt der Kessel)"
+    unit: "-"
+    value: [pool_water, hall_air, space_heating]
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  source_temps_c:
+    label_en: "Heat source temperature for non-air sources"
+    label_de: "Wärmequellentemperatur für Nicht-Luft-Quellen"
+    unit: "degC"
+    value:
+      ground: 10.0
+      waste: 15.0
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  eta_carnot:
+    label_en: "Carnot fraction (share of the ideal COP reached)"
+    label_de: "Gütegrad (Anteil des idealen COP)"
+    unit: "1"
+    pessimistic: 0.40
+    central: 0.45
+    optimistic: 0.50
+    status: illustrative
+    source: "Illustrative value. Calibrate against manufacturer data for the heat pump class."
+  cop_min:
+    label_en: "Lower limit of the COP"
+    label_de: "Untergrenze des COP"
+    unit: "1"
+    value: 1.5
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  cop_max:
+    label_en: "Upper limit of the COP"
+    label_de: "Obergrenze des COP"
+    unit: "1"
+    value: 7.0
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  min_lift_k:
+    label_en: "Smallest temperature lift used in the COP formula"
+    label_de: "Kleinster Temperaturhub in der COP-Formel"
+    unit: "K"
+    value: 5.0
+    status: illustrative
+    source: "Illustrative value. Avoids unrealistic COP when source and sink are close."
+  hp_sizing_quantile:
+    label_en: "Heat pump sized to this quantile of the hourly load it serves"
+    label_de: "Wärmepumpe ausgelegt auf diesen Quantilwert der bedienten Stundenlast"
+    unit: "1"
+    value: 0.85
+    status: illustrative
+    source: "Illustrative value. The operator can override the capacity."
+
+  # --------------------------------------------------------- investment, O&M
+  hp_capex_per_kw_th:
+    label_en: "Heat pump investment per kW thermal"
+    label_de: "Investition Wärmepumpe je kW thermisch"
+    unit: "EUR/kW"
+    pessimistic: 1100
+    central: 850
+    optimistic: 700
+    status: illustrative
+    source: "Illustrative value. Replace with SPLASH technology data."
+  hp_capex_fixed:
+    label_en: "Heat pump fixed cost (hydraulics, planning, commissioning)"
+    label_de: "Fixkosten Wärmepumpe (Hydraulik, Planung, Inbetriebnahme)"
+    unit: "EUR"
+    pessimistic: 25000
+    central: 15000
+    optimistic: 10000
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  hp_om_rate:
+    label_en: "Heat pump O&M, share of investment per year"
+    label_de: "Wartung Wärmepumpe, Anteil der Investition je Jahr"
+    unit: "1/a"
+    pessimistic: 0.03
+    central: 0.02
+    optimistic: 0.015
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  heater_capex_per_kw_el:
+    label_en: "Electric heater investment per kW"
+    label_de: "Investition Heizstab je kW"
+    unit: "EUR/kW"
+    pessimistic: 200
+    central: 120
+    optimistic: 80
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  flex_capex_fixed:
+    label_en: "Flexibility fixed cost (controls, metering, aggregator interface)"
+    label_de: "Fixkosten Flexibilität (Regelung, Messtechnik, Aggregator-Schnittstelle)"
+    unit: "EUR"
+    pessimistic: 30000
+    central: 20000
+    optimistic: 12000
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  flex_om_rate:
+    label_en: "Flexibility O&M, share of investment per year"
+    label_de: "Wartung Flexibilität, Anteil der Investition je Jahr"
+    unit: "1/a"
+    value: 0.02
+    status: illustrative
+    source: "Illustrative value, no source yet."
+
+  # ---------------------------------------------------------------- subsidy
+  subsidy_rate:
+    label_en: "BEG heating grant rate (heat pumps)"
+    label_de: "Zuschusssatz BEG Heizungsförderung (Wärmepumpen)"
+    unit: "1"
+    value: 0.30
+    status: sourced
+    source: "KfW 522 page, up to 30 % of eligible costs. Programme rules changed on 21 July 2026. https://www.kfw.de/inlandsfoerderung/Unternehmen/Energie-und-Umwelt/F%c3%b6rderprodukte/Heizungsf%c3%b6rderung-f%c3%bcr-Unternehmen-%e2%80%93-Nichtwohngeb%c3%a4ude-(522)/"
+  subsidy_cap_bands:
+    label_en: "Cap on eligible costs by heated net floor area"
+    label_de: "Förderhöchstbetrag nach beheizter Nettogrundfläche"
+    unit: "EUR"
+    value:
+      flat_eur: 28000
+      flat_up_to_m2: 150
+      bands:
+        - {up_to_m2: 400, eur_per_m2: 197}
+        - {up_to_m2: 1000, eur_per_m2: 118}
+        - {up_to_m2: null, eur_per_m2: 79}
+    status: sourced
+    source: "KfW 522 page. The cap starts to fall on 1 February 2027. Whether the pool hall counts fully needs checking with an energy consultant."
+  reported_heat_pool_share:
+    label_en: "Share of reported useful heat that goes to basins and hall (rest: showers, other)"
+    label_de: "Anteil der gemeldeten Nutzwärme für Becken und Halle (Rest: Duschen, Sonstiges)"
+    unit: "1"
+    pessimistic: 0.70
+    central: 0.80
+    optimistic: 0.90
+    status: illustrative
+    source: "Assumption for the optional demand calibration only. Replace with measured data where available."
+  shower_water_l_per_visitor:
+    label_en: "Shower water per visitor (hot water demand of the model)"
+    label_de: "Duschwasser je Besucher (Warmwasserbedarf im Modell)"
+    unit: "L"
+    value: 50.0
+    status: sourced
+    source: "VDI 2089 Part 1: 0.05 to 0.08 m3 shower water per person, the lower end is used (2010 edition, read from an excerpt; the 2023 edition is not checked). An answer of the operator replaces it."
+  shower_mix_temp_c:
+    label_en: "Shower water temperature"
+    label_de: "Duschwassertemperatur"
+    unit: "degC"
+    value: 40.0
+    status: illustrative
+    source: "Assumption. Mains water temperature by month comes from data/splash/config/network_water_temp_monthly.csv (illustrative, 6.5 to 17 degC)."
+  stay_in_water_h:
+    label_en: "Mean stay of a visitor in the water (converts persons in the water to visitors per hour)"
+    label_de: "Mittlere Aufenthaltsdauer im Wasser (rechnet Personen im Wasser in Besucher je Stunde um)"
+    unit: "h"
+    value: 1.0
+    status: illustrative
+    source: "Assumption (Little's law: visitors per hour = persons in the water / stay). With annual visitors entered, the value only shapes the daily profile, the annual sum is fixed."
+  subsidy_eligible_share:
+    label_en: "Share of the heat pump investment that is eligible"
+    label_de: "Förderfähiger Anteil der Investition"
+    unit: "1"
+    value: 1.0
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  subsidy_area_factor:
+    label_en: "Heated net floor area as a share of the hall area"
+    label_de: "Beheizte Nettogrundfläche als Anteil der Hallenfläche"
+    unit: "1"
+    value: 1.0
+    status: illustrative
+    source: "Illustrative value, no source yet."
+
+  # -------------------------------------------------------- emission factors
+  ef_gas:
+    label_en: "CO2 emission factor, natural gas (billing basis)"
+    label_de: "CO2-Emissionsfaktor Erdgas (Abrechnungsbasis)"
+    unit: "kg/kWh"
+    value: 0.182
+    status: illustrative
+    source: "Check against the current UBA emission factor list. Value in line with the UBA-based table of the Berlin Senate."
+  ef_oil:
+    label_en: "CO2 emission factor, heating oil"
+    label_de: "CO2-Emissionsfaktor Heizöl"
+    unit: "kg/kWh"
+    value: 0.266
+    status: illustrative
+    source: "Check against the current UBA emission factor list."
+  ef_district_heat:
+    label_en: "CO2 emission factor, district heat"
+    label_de: "CO2-Emissionsfaktor Fernwärme"
+    unit: "kg/kWh"
+    value: 0.25
+    status: illustrative
+    source: "Illustrative value. The factor is specific to each district heating network."
+  ef_other_heat:
+    label_en: "CO2 emission factor, other heat source"
+    label_de: "CO2-Emissionsfaktor sonstige Wärmequelle"
+    unit: "kg/kWh"
+    value: 0.20
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  ef_electricity:
+    label_en: "CO2 emission factor, German grid mix"
+    label_de: "CO2-Emissionsfaktor Strommix Deutschland"
+    unit: "kg/kWh"
+    pessimistic: 0.363
+    central: 0.353
+    optimistic: 0.300
+    status: sourced
+    source: "UBA publishes 353 and 363 g/kWh for 2024 in two versions. The optimistic value is a placeholder. Store the version when updating."
+  ef_electricity_decline_per_year:
+    label_en: "Yearly decline of the grid mix factor"
+    label_de: "Jährlicher Rückgang des Strommix-Faktors"
+    unit: "1/a"
+    pessimistic: 0.0
+    central: 0.04
+    optimistic: 0.08
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  ef_curtailed:
+    label_en: "CO2 factor counted for curtailed renewable electricity"
+    label_de: "Angesetzter CO2-Faktor für abgeregelten Erneuerbaren-Strom"
+    unit: "kg/kWh"
+    value: 0.0
+    status: project
+    source: "Accounting rule: electricity that would otherwise be lost counts as zero. The app also shows the grid-mix view."
+
+  # --------------------------------------------------------- flexible heating
+  heater_efficiency:
+    label_en: "Electric heater efficiency"
+    label_de: "Wirkungsgrad Heizstab"
+    unit: "1"
+    value: 0.99
+    status: illustrative
+    source: "Illustrative value, no source yet."
+  flex_threshold_kw:
+    label_en: "Aggregated flexibility threshold from the SPLASH policy review"
+    label_de: "Schwelle für aggregierte Flexibilität aus dem SPLASH-Policy-Review"
+    unit: "kW"
+    value: 100
+    status: project
+    source: "SPLASH policy review (100 kW aggregated threshold)."
+  curtailed_price_eur_per_mwh:
+    label_en: "Net price of curtailed electricity (default, user can change it)"
+    label_de: "Nettopreis für Überschussstrom (Voreinstellung, änderbar)"
+    unit: "EUR/MWh"
+    value: 23
+    status: project
+    source: "Default set by the project lead for the first view. No tariff of this kind is guaranteed. The break-even price is shown next to it."

@@ -1,0 +1,2 @@
+parameter,value,unit,source,note
+T6_hamburg_share,1.0,-,user input (to be checked),"share of the T6 curtailment open to the pools of Schleswig-Holstein. The official T6 region is merged with Hamburg, so 1.0 overstates availability. The curtailment series is real data; set a share below 1 as a competing demand scenario (settings curtailment.access_share overrides it)"
