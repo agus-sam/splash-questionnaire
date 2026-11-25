@@ -55,7 +55,7 @@ TEXTS: dict[str, dict[str, str]] = {
         "en": "Your answers are used for research only and evaluated in anonymised form. Contact details are optional and stored separately. This app loads no external services (no fonts, no tracking). You can ask for your data to be deleted at any time by sending us your resume code.",
     },
     "privacy_full": {"de": "Vollständige Datenschutzhinweise", "en": "Full privacy notice"},
-    "contact_info": {"de": "Rückfragen: Dr. Mominul Hasan, mominul.hasan@uni-flensburg.de", "en": "Questions: Dr. Mominul Hasan, mominul.hasan@uni-flensburg.de"},
+    "contact_info": {"de": "Rückfragen: Agus Samsudin, agus.samsudin@uni-flensburg.de", "en": "Questions: Agus Samsudin, agus.samsudin@uni-flensburg.de"},
     "resume_title": {"de": "Schon begonnen?", "en": "Already started?"},
     "resume_code": {"de": "Wiederaufnahme-Code", "en": "Resume code"},
     "resume_btn": {"de": "Fortsetzen", "en": "Resume"},
