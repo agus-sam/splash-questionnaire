@@ -51,8 +51,8 @@ T = {
         "en": "The results are a first orientation based on your inputs and simplified assumptions. They do not replace professional planning or grant advice. Grants: apply before work starts, no legal entitlement.",
     },
     "contact": {
-        "de": "SPLASH, Europa-Universität Flensburg (SEDEV). Rückfragen: Dr. Mominul Hasan, mominul.hasan@uni-flensburg.de",
-        "en": "SPLASH, Europa-Universität Flensburg (SEDEV). Questions: Dr. Mominul Hasan, mominul.hasan@uni-flensburg.de",
+        "de": "SPLASH, Europa-Universität Flensburg (SEDEV). Rückfragen: Agus Samsudin, agus.samsudin@uni-flensburg.de",
+        "en": "SPLASH, Europa-Universität Flensburg (SEDEV). Questions: gus Samsudin, agus.samsudin@uni-flensburg.de",
     },
 }
 
